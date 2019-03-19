@@ -1,0 +1,5 @@
+include dashmaterialui/dashmaterialui.min.js
+include dashmaterialui/dashmaterialui.dev.js
+include dashmaterialui/metadata.json
+include dashmaterialui/package.json
+include README.md
