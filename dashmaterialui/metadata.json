@@ -734,5 +734,267 @@
         }
       }
     }
+  },
+  "src/lib/components/Typography.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "Typography",
+    "methods": [],
+    "props": {
+      "align": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'inherit'",
+              "computed": false
+            },
+            {
+              "value": "'left'",
+              "computed": false
+            },
+            {
+              "value": "'center'",
+              "computed": false
+            },
+            {
+              "value": "'right'",
+              "computed": false
+            },
+            {
+              "value": "'justify'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Set the text-align on the component.",
+        "defaultValue": {
+          "value": "'inherit'",
+          "computed": false
+        }
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content of the component."
+      },
+      "classes": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
+      },
+      "color": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'default'",
+              "computed": false
+            },
+            {
+              "value": "'error'",
+              "computed": false
+            },
+            {
+              "value": "'inherit'",
+              "computed": false
+            },
+            {
+              "value": "'primary'",
+              "computed": false
+            },
+            {
+              "value": "'secondary'",
+              "computed": false
+            },
+            {
+              "value": "'textPrimary'",
+              "computed": false
+            },
+            {
+              "value": "'textSecondary'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The color of the component. It supports those theme colors that make sense for this component.",
+        "defaultValue": {
+          "value": "'default'",
+          "computed": false
+        }
+      },
+      "component": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.Component"
+        },
+        "required": false,
+        "description": "The component used for the root node. Either a string to use a DOM element or a component. By default, it maps the variant to a good default headline component."
+      },
+      "gutterBottom": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the text will have a bottom margin.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "headlineMapping": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "We are empirically mapping the variant property to a range of different DOM element types. For instance, subtitle1 to <h6>. If you wish to change that mapping, you can provide your own. Alternatively, you can use the component property. The default mapping is the following:",
+        "defaultValue": {
+          "value": "{ h1: 'h1', h2: 'h2', h3: 'h3', h4: 'h4', h5: 'h5', h6: 'h6', subtitle1: 'h6', subtitle2: 'h6', body1: 'p', body2: 'p' }",
+          "computed": false
+        }
+      },
+      "inline": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Controls whether the Typography is inline or not.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "internalDeprecatedVariant": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "A deprecated variant is used from an internal component. Users don't need a deprecation warning here if they switched to the v2 theme. They already get the mapping that will be applied in the next major release."
+      },
+      "noWrap": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the text will not wrap, but instead will truncate with an ellipsis.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "paragraph": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the text will have a bottom margin.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "variant": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'h1'",
+              "computed": false
+            },
+            {
+              "value": "'h2'",
+              "computed": false
+            },
+            {
+              "value": "'h3'",
+              "computed": false
+            },
+            {
+              "value": "'h4'",
+              "computed": false
+            },
+            {
+              "value": "'h5'",
+              "computed": false
+            },
+            {
+              "value": "'h6'",
+              "computed": false
+            },
+            {
+              "value": "'subtitle1'",
+              "computed": false
+            },
+            {
+              "value": "'subtitle2'",
+              "computed": false
+            },
+            {
+              "value": "'body1'",
+              "computed": false
+            },
+            {
+              "value": "'body2'",
+              "computed": false
+            },
+            {
+              "value": "'caption'",
+              "computed": false
+            },
+            {
+              "value": "'button'",
+              "computed": false
+            },
+            {
+              "value": "'overline'",
+              "computed": false
+            },
+            {
+              "value": "'srOnly'",
+              "computed": false
+            },
+            {
+              "value": "'inherit'",
+              "computed": false
+            },
+            {
+              "value": "\"display4\"",
+              "computed": false
+            },
+            {
+              "value": "'display3'",
+              "computed": false
+            },
+            {
+              "value": "'display2'",
+              "computed": false
+            },
+            {
+              "value": "'display1'",
+              "computed": false
+            },
+            {
+              "value": "'headline'",
+              "computed": false
+            },
+            {
+              "value": "'title'",
+              "computed": false
+            },
+            {
+              "value": "'subheading'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Applies the theme typography styles. Use body1 as the default value with the legacy implementation and body2 with the new one."
+      }
+    }
   }
 }

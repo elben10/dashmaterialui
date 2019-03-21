@@ -106,5 +106,5 @@ DashMaterialUI is a Dash component library.
 - [ ] Toolbar
 - [ ] Tooltip
 - [ ] TouchRipple
-- [ ] Typography
+- [x] Typography
 - [ ] Zoom

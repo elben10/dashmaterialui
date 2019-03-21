@@ -19,7 +19,8 @@ app.layout = html.Div([
         dashmaterialui.Grid('hejsa', item=True, xs=6),
     ], container=True),
     dashmaterialui.Avatar(src='https://images.unsplash.com/photo-1552958459-fcfd899af723?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=moises-alex-1447758-unsplash.jpg'),
-    dashmaterialui.Paper(html.Div("HEJSA", style={'height': '10cm'}))
+    dashmaterialui.Paper(html.Div("HEJSA", style={'height': '10cm'})),
+    dashmaterialui.Typography("h1. Heading", component="h2", variant="h1"),
 ])
 
 
