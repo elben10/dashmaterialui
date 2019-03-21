@@ -66,8 +66,9 @@ app.layout = html.Div(
         dashmaterialui.Typography("h1. Heading", component="h2", variant="h1"),
         dashmaterialui.Link("hejsa", href="/"),
         dashmaterialui.Icon("add_circle", color="action"),
-        dashmaterialui.Icon("add_circle", color="primarily"),
-        dashmaterialui.Button('BUTTON', href='/')
+        dashmaterialui.Icon("add_circle", color="primary"),
+        dashmaterialui.Button('BUTTON', href='/'),
+        dashmaterialui.AppBar(dashmaterialui.Button('BUTTON', href='/')),
     ]
 )
 

@@ -1,3 +1,4 @@
+from .AppBar import AppBar
 from .Avatar import Avatar
 from .Button import Button
 from .Grid import Grid
@@ -7,6 +8,7 @@ from .Paper import Paper
 from .Typography import Typography
 
 __all__ = [
+    "AppBar",
     "Avatar",
     "Button",
     "Grid",
