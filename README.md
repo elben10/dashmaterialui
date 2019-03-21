@@ -42,7 +42,7 @@ DashMaterialUI is a Dash component library.
 - [ ] FormHelperText
 - [ ] FormLabel
 - [x] Grid
-- [ ] GridList
+- [x] GridList
 - [ ] GridListTile
 - [ ] GridListTileBar
 - [ ] Grow

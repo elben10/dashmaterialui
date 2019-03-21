@@ -110,6 +110,7 @@ app.layout = html.Div(
             ],
             container=True,
         ),
+        dashmaterialui.GridList()
     ]
 )
 

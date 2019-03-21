@@ -7,6 +7,7 @@ from .CardActions import CardActions
 from .CardContent import CardContent
 from .CardMedia import CardMedia
 from .Grid import Grid
+from .GridList import GridList
 from .Icon import Icon
 from .Link import Link
 from .Paper import Paper
@@ -22,6 +23,7 @@ __all__ = [
     "CardContent",
     "CardMedia",
     "Grid",
+    "GridList",
     "Icon",
     "Link",
     "Paper",

@@ -8,6 +8,7 @@ import CardContent from './components/CardContent.react';
 import CardMedia from './components/CardMedia.react';
 import Button from './components/Button.react';
 import Grid from './components/Grid.react';
+import GridList from './components/GridList.react';
 import Icon from './components/Icon.react';
 import Link from './components/Link.react';
 import Paper from './components/Paper.react';
@@ -23,6 +24,7 @@ export {
     CardMedia,
     Button,
     Grid,
+    GridList,
     Icon,
     Link,
     Paper,
