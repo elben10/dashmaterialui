@@ -60,16 +60,32 @@ app.layout = html.Div(
                 item=True,
                 xs=10,
             ),
-            justify='center',
+            justify="center",
             container=True,
         ),
         dashmaterialui.Typography("h1. Heading", component="h2", variant="h1"),
         dashmaterialui.Link("hejsa", href="/"),
         dashmaterialui.Icon("add_circle", color="action"),
         dashmaterialui.Icon("add_circle", color="primary"),
-        dashmaterialui.Button('BUTTON', href='/'),
-        dashmaterialui.AppBar(dashmaterialui.Button('BUTTON', href='/')),
-        dashmaterialui.Card("HEJSA")
+        dashmaterialui.Button("BUTTON", href="/"),
+        dashmaterialui.AppBar(dashmaterialui.Button("BUTTON", href="/")),
+        dashmaterialui.Grid(
+            dashmaterialui.Card(
+                dashmaterialui.CardContent(
+                    [
+                        dashmaterialui.Typography(
+                            "Word of the Day", color="textSecondary", gutterBottom=True,
+                        ),
+                        dashmaterialui.Typography(
+                            "be•nev•o•lent", variant="h5", component="h2",
+                        ),
+                        dashmaterialui.Typography("adjective", color="textSecondary"),
+                        dashmaterialui.Typography(["well meaning and kindly.", html.Br(), '"a benevolent smile"'], component="p")
+                    ]
+                )
+            ),
+            xs=2,
+        ),
     ]
 )
 
