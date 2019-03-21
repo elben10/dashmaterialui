@@ -12,7 +12,7 @@ DashMaterialUI is a Dash component library.
 - [ ] ButtonBase
 - [x] Card
 - [ ] CardActionArea
-- [ ] CardActions
+- [x] CardActions
 - [x] CardContent
 - [ ] CardHeader
 - [ ] CardMedia

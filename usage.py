@@ -70,20 +70,32 @@ app.layout = html.Div(
         dashmaterialui.Button("BUTTON", href="/"),
         dashmaterialui.AppBar(dashmaterialui.Button("BUTTON", href="/")),
         dashmaterialui.Grid(
-            dashmaterialui.Card(
+            dashmaterialui.Card([
                 dashmaterialui.CardContent(
                     [
                         dashmaterialui.Typography(
-                            "Word of the Day", color="textSecondary", gutterBottom=True,
+                            "Word of the Day", color="textSecondary", gutterBottom=True
                         ),
                         dashmaterialui.Typography(
-                            "be•nev•o•lent", variant="h5", component="h2",
+                            "be•nev•o•lent", variant="h5", component="h2"
                         ),
                         dashmaterialui.Typography("adjective", color="textSecondary"),
-                        dashmaterialui.Typography(["well meaning and kindly.", html.Br(), '"a benevolent smile"'], component="p")
+                        dashmaterialui.Typography(
+                            [
+                                "well meaning and kindly.",
+                                html.Br(),
+                                '"a benevolent smile"',
+                            ],
+                            component="p",
+                        ),
                     ]
-                )
-            ),
+                ),
+                dashmaterialui.CardActions(
+                    [
+                        dashmaterialui.Button("Learn More", size="small"),
+                    ]
+                ),
+            ]),
             xs=2,
         ),
     ]
