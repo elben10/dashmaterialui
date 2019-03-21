@@ -106,7 +106,7 @@ app.layout = html.Div(
                     item=True,
                 ),
                 html.H1(**{'data-ged':2}),
-                dashmaterialui.Grid(dashmaterialui.Card(dashmaterialui.CardMedia(image='https://images.unsplash.com/photo-1552958459-fcfd899af723?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=moises-alex-1447758-unsplash.jpg', style={'height': '100px'}), style={'height': '100%'}), item=True, xs=2)
+                dashmaterialui.Grid(dashmaterialui.Card(dashmaterialui.CardActionArea(dashmaterialui.CardMedia(image='https://images.unsplash.com/photo-1552958459-fcfd899af723?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=moises-alex-1447758-unsplash.jpg', style={'height': '100px'})), style={'height': '100%'}), item=True, xs=2)
             ],
             container=True,
         ),

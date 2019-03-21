@@ -2,6 +2,7 @@ from .AppBar import AppBar
 from .Avatar import Avatar
 from .Button import Button
 from .Card import Card
+from .CardActionArea import CardActionArea
 from .CardActions import CardActions
 from .CardContent import CardContent
 from .CardMedia import CardMedia
@@ -16,6 +17,7 @@ __all__ = [
     "Avatar",
     "Button",
     "Card",
+    "CardActionArea",
     "CardActions",
     "CardContent",
     "CardMedia",

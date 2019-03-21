@@ -2,6 +2,7 @@
 import AppBar from './components/AppBar.react';
 import Avatar from './components/Avatar.react';
 import Card from './components/Card.react';
+import CardActionArea from './components/CardActionArea.react';
 import CardActions from './components/CardActions.react';
 import CardContent from './components/CardContent.react';
 import CardMedia from './components/CardMedia.react';
@@ -16,6 +17,7 @@ export {
     AppBar,
     Avatar,
     Card,
+    CardActionArea,
     CardActions,
     CardContent,
     CardMedia,
