@@ -4,6 +4,7 @@ import Avatar from './components/Avatar.react';
 import Card from './components/Card.react';
 import CardActions from './components/CardActions.react';
 import CardContent from './components/CardContent.react';
+import CardMedia from './components/CardMedia.react';
 import Button from './components/Button.react';
 import Grid from './components/Grid.react';
 import Icon from './components/Icon.react';
@@ -17,6 +18,7 @@ export {
     Card,
     CardActions,
     CardContent,
+    CardMedia,
     Button,
     Grid,
     Icon,

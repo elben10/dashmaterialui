@@ -16,14 +16,14 @@ Keyword arguments:
 - component (optional): The component used for the root node. Either a string to use a DOM element or a component.
 - image (string; optional): Image to be displayed as a background image. Either image or src prop must be specified. Note that caller must specify height otherwise the image will not be visible.
 - src (string; optional): An alias for image property. Available only with media components. Media components: video, audio, picture, iframe, img.
-- title (string; optional)"""
+- style (dict; optional): Add style object"""
     @_explicitize_args
-    def __init__(self, classes=Component.UNDEFINED, component=Component.UNDEFINED, image=Component.UNDEFINED, src=Component.UNDEFINED, title=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['classes', 'component', 'image', 'src', 'title']
+    def __init__(self, classes=Component.UNDEFINED, component=Component.UNDEFINED, image=Component.UNDEFINED, src=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['classes', 'component', 'image', 'src', 'style']
         self._type = 'CardMedia'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['classes', 'component', 'image', 'src', 'title']
+        self.available_properties = ['classes', 'component', 'image', 'src', 'style']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

@@ -4,6 +4,7 @@ from .Button import Button
 from .Card import Card
 from .CardActions import CardActions
 from .CardContent import CardContent
+from .CardMedia import CardMedia
 from .Grid import Grid
 from .Icon import Icon
 from .Link import Link
@@ -17,6 +18,7 @@ __all__ = [
     "Card",
     "CardActions",
     "CardContent",
+    "CardMedia",
     "Grid",
     "Icon",
     "Link",
