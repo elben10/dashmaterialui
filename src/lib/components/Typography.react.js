@@ -11,7 +11,7 @@ import Typography1 from '@material-ui/core/Typography'
  */
 export default class Typography extends Component {
     render() {
-        const { align, children, classes, color, component, gutterBottom, headlineMapping, inline, internalDeprecatedVariant, noWrap, paragraph, variant } = this.props;
+        const { align, children, classes, color, component, gutterBottom, headlineMapping, inline, internalDeprecatedVariant, noWrap, paragraph, style, variant } = this.props;
         return (
             <Typography1
                 align={align}
@@ -24,6 +24,7 @@ export default class Typography extends Component {
                 internalDeprecatedVariant={internalDeprecatedVariant}
                 noWrap={noWrap}
                 paragraph={paragraph}
+                style={style}
                 variant={variant}
             >
                 {children}
@@ -87,6 +88,10 @@ Typography.propTypes = {
      * If true, the text will have a bottom margin.
      */
     paragraph: PropTypes.bool,
+    /**
+     * Add style object
+     */
+    style: PropTypes.object,
     /**
      *  Applies the theme typography styles. Use body1 as the default value with the legacy implementation and body2 with the new one.
      */

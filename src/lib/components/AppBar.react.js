@@ -11,12 +11,13 @@ import AppBar1 from '@material-ui/core/AppBar'
  */
 export default class AppBar extends Component {
     render() {
-        const {children, classes, color, position} = this.props;
+        const {children, classes, color, position, style} = this.props;
         return (
             <AppBar1   
             classes={classes}
             color={color}
             position={position}
+            style={style}
             >
                 {children}
             </AppBar1>
@@ -45,5 +46,9 @@ AppBar.propTypes = {
     /**
      * The positioning type. The behavior of the different options is described in the MDN web docs. Note: sticky is not universally supported and will fall back to static when unavailable.
      */
-    position: PropTypes.oneOf(['fixed', 'absolute', 'sticky', 'static', 'relative'])
+    position: PropTypes.oneOf(['fixed', 'absolute', 'sticky', 'static', 'relative']),
+    /**
+     * Add style object
+     */
+    style: PropTypes.object,
 };

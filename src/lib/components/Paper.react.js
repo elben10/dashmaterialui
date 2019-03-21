@@ -11,13 +11,14 @@ import Paper1 from '@material-ui/core/Paper'
  */
 export default class Paper extends Component {
     render() {
-        const {children, classes, component, elevation, square} = this.props;
+        const {children, classes, component, elevation, square, style} = this.props;
         return (
             <Paper1   
             classes={classes}
             component={component}
             elevation={elevation}
             square={square}
+            style={style}
             >
                 {children}
             </Paper1>
@@ -52,4 +53,8 @@ Paper.propTypes = {
      * If true, rounded corners are disabled.
      */
     square: PropTypes.bool,
+    /**
+     * Add style object
+     */
+    style: PropTypes.object,
 };

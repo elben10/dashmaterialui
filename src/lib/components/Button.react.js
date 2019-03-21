@@ -11,7 +11,7 @@ import Button1 from '@material-ui/core/Button'
  */
 export default class Button extends Component {
     render() {
-        const {children, classes, color, component, disabled, disableFocusRipple, disableRipple, fullWidth, href, mini, size, variant} = this.props;
+        const {children, classes, color, component, disabled, disableFocusRipple, disableRipple, fullWidth, href, mini, size, style, variant} = this.props;
         return (
             <Button1   
             classes={classes}
@@ -24,6 +24,7 @@ export default class Button extends Component {
             href={href}
             mini={mini}
             size={size}
+            style={style}
             variant={variant}
             >
                 {children}
@@ -88,6 +89,10 @@ Button.propTypes = {
      * The size of the button. small is equivalent to the dense button styling.
      */
     size: PropTypes.oneOf(['small', 'medium', 'large']),
+    /**
+     * Add style object
+     */
+    style: PropTypes.object,
     /**
      * The variant to use. WARNING: flat and raised are deprecated. Instead use text and contained respectively. fab and extendedFab are deprecated. Instead use <Fab> and <Fab variant="extended">
      */

@@ -14,14 +14,15 @@ which is editable by the user.
 Keyword arguments:
 - children (a list of or a singular dash component, string or number; optional): The content of the component.
 - classes (dict; optional): Override or extend the styles applied to the component. See CSS API below for more details.
-- disableActionSpacing (boolean; optional): If true, the card actions do not have additional margin."""
+- disableActionSpacing (boolean; optional): If true, the card actions do not have additional margin.
+- style (dict; optional): Add style object"""
     @_explicitize_args
-    def __init__(self, children=None, classes=Component.UNDEFINED, disableActionSpacing=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'classes', 'disableActionSpacing']
+    def __init__(self, children=None, classes=Component.UNDEFINED, disableActionSpacing=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'classes', 'disableActionSpacing', 'style']
         self._type = 'CardActions'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'classes', 'disableActionSpacing']
+        self.available_properties = ['children', 'classes', 'disableActionSpacing', 'style']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

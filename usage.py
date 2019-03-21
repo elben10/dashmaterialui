@@ -70,33 +70,44 @@ app.layout = html.Div(
         dashmaterialui.Button("BUTTON", href="/"),
         dashmaterialui.AppBar(dashmaterialui.Button("BUTTON", href="/")),
         dashmaterialui.Grid(
-            dashmaterialui.Card([
-                dashmaterialui.CardContent(
-                    [
-                        dashmaterialui.Typography(
-                            "Word of the Day", color="textSecondary", gutterBottom=True
-                        ),
-                        dashmaterialui.Typography(
-                            "be•nev•o•lent", variant="h5", component="h2"
-                        ),
-                        dashmaterialui.Typography("adjective", color="textSecondary"),
-                        dashmaterialui.Typography(
-                            [
-                                "well meaning and kindly.",
-                                html.Br(),
-                                '"a benevolent smile"',
-                            ],
-                            component="p",
-                        ),
-                    ]
+            [
+                dashmaterialui.Grid(
+                    dashmaterialui.Card(
+                        [
+                            dashmaterialui.CardContent(
+                                [
+                                    dashmaterialui.Typography(
+                                        "Word of the Day",
+                                        color="textSecondary",
+                                        gutterBottom=True,
+                                    ),
+                                    dashmaterialui.Typography(
+                                        "be•nev•o•lent", variant="h5", component="h2"
+                                    ),
+                                    dashmaterialui.Typography(
+                                        "adjective", color="textSecondary"
+                                    ),
+                                    dashmaterialui.Typography(
+                                        [
+                                            "well meaning and kindly.",
+                                            html.Br(),
+                                            '"a benevolent smile"',
+                                        ],
+                                        component="p",
+                                    ),
+                                ]
+                            ),
+                            dashmaterialui.CardActions(
+                                [dashmaterialui.Button("Learn More", size="small")]
+                            ),
+                        ]
+                    ),
+                    xs=2,
+                    item=True,
                 ),
-                dashmaterialui.CardActions(
-                    [
-                        dashmaterialui.Button("Learn More", size="small"),
-                    ]
-                ),
-            ]),
-            xs=2,
+                dashmaterialui.Grid(dashmaterialui.Card(['hejsa', dashmaterialui.CardMedia(title='Hejsa', image="https://images.unsplash.com/photo-1552958459-fcfd899af723?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=moises-alex-1447758-unsplash.jpg")]), item=True, xs=2)
+            ],
+            container=True,
         ),
     ]
 )

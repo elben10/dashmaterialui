@@ -11,11 +11,12 @@ import CardActions1 from '@material-ui/core/CardActions'
  */
 export default class CardActions extends Component {
     render() {
-        const {children, classes, disableActionSpacing} = this.props;
+        const {children, classes, disableActionSpacing, style} = this.props;
         return (
             <CardActions1   
             classes={classes}
             disableActionSpacing={disableActionSpacing}
+            style={style}
             >
                 {children}
             </CardActions1>
@@ -40,4 +41,8 @@ CardActions.propTypes = {
      * If true, the card actions do not have additional margin.
      */
     disableActionSpacing: PropTypes.bool,
+    /**
+     * Add style object
+     */
+    style: PropTypes.object,
 };

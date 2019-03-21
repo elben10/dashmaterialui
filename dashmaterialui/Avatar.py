@@ -20,14 +20,15 @@ This can be an element, or just a string.
 - imgProps (dict; optional): Attributes applied to the img element if the component is used to display an image.
 - sizes (string; optional): The sizes attribute for the img element.
 - src (string; optional): The src attribute for the img element.
-- srcSet (string; optional): The srcSet attribute for the img element."""
+- srcSet (string; optional): The srcSet attribute for the img element.
+- style (dict; optional): Add style object"""
     @_explicitize_args
-    def __init__(self, children=None, alt=Component.UNDEFINED, classes=Component.UNDEFINED, component=Component.UNDEFINED, imgProps=Component.UNDEFINED, sizes=Component.UNDEFINED, src=Component.UNDEFINED, srcSet=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'alt', 'classes', 'component', 'imgProps', 'sizes', 'src', 'srcSet']
+    def __init__(self, children=None, alt=Component.UNDEFINED, classes=Component.UNDEFINED, component=Component.UNDEFINED, imgProps=Component.UNDEFINED, sizes=Component.UNDEFINED, src=Component.UNDEFINED, srcSet=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'alt', 'classes', 'component', 'imgProps', 'sizes', 'src', 'srcSet', 'style']
         self._type = 'Avatar'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'alt', 'classes', 'component', 'imgProps', 'sizes', 'src', 'srcSet']
+        self.available_properties = ['children', 'alt', 'classes', 'component', 'imgProps', 'sizes', 'src', 'srcSet', 'style']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

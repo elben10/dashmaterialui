@@ -11,11 +11,12 @@ import Card1 from '@material-ui/core/Card'
  */
 export default class Card extends Component {
     render() {
-        const {children, classes, raised} = this.props;
+        const {children, classes, raised, style} = this.props;
         return (
             <Card1   
             classes={classes}
             raised={raised}
+            style={style}
             >
                 {children}
             </Card1>
@@ -40,4 +41,8 @@ Card.propTypes = {
      * If true, the card will use raised styling.
      */
     raised: PropTypes.bool,
+    /**
+     * Add style object
+     */
+    style: PropTypes.object,
 };

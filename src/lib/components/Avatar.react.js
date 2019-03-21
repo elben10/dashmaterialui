@@ -11,7 +11,7 @@ import Avatar1 from '@material-ui/core/Avatar'
  */
 export default class Avatar extends Component {
     render() {
-        const {alt, children, classes, component, imgProps, sizes, src, srcSet} = this.props;
+        const {alt, children, classes, component, imgProps, sizes, src, srcSet, style} = this.props;
         return (
             <Avatar1   
             alt={alt}
@@ -21,6 +21,7 @@ export default class Avatar extends Component {
             sizes={sizes}
             src={src}
             srcSet={srcSet}
+            style={style}
             >
                 {children}
             </Avatar1>
@@ -65,5 +66,9 @@ Avatar.propTypes = {
     /**
      *  The srcSet attribute for the img element.
      */
-    srcSet: PropTypes.string
+    srcSet: PropTypes.string,
+    /**
+     * Add style object
+     */
+    style: PropTypes.object,
 };

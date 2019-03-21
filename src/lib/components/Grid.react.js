@@ -11,7 +11,7 @@ import Grid1 from '@material-ui/core/Grid'
  */
 export default class Grid extends Component {
     render() {
-        const {alignContent, alignItems, children, classes, component, container, direction, item, justify, lg, md, sm, spacing, wrap, xl, xs, zeroMinWidth} = this.props;
+        const {alignContent, alignItems, children, classes, component, container, direction, item, justify, lg, md, sm, spacing, style, wrap, xl, xs, zeroMinWidth} = this.props;
         return (
             <Grid1
                 alignContent={alignContent}
@@ -26,6 +26,7 @@ export default class Grid extends Component {
                 md={md}
                 sm={sm}
                 spacing={spacing}
+                style={style}
                 wrap={wrap}
                 xl={xl}
                 xs={xs}
@@ -108,6 +109,10 @@ Grid.propTypes = {
      * Defines the space between the type item component. It can only be used on a type container component.
      */
     spacing: PropTypes.oneOf([0, 8, 16, 24, 32, 40]),
+    /**
+     * Add style object
+     */
+    style: PropTypes.object,
     /**
      *  Defines the flex-wrap style property. It's applied for all screen sizes.
      */

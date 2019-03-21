@@ -79,6 +79,13 @@
           "value": "'fixed'",
           "computed": false
         }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
       }
     }
   },
@@ -147,6 +154,13 @@
         },
         "required": false,
         "description": "The srcSet attribute for the img element."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
       }
     }
   },
@@ -293,6 +307,13 @@
           "computed": false
         }
       },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
+      },
       "variant": {
         "type": {
           "name": "enum",
@@ -365,6 +386,13 @@
           "value": "false",
           "computed": false
         }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
       }
     }
   },
@@ -397,6 +425,13 @@
           "value": "false",
           "computed": false
         }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
       }
     }
   },
@@ -430,6 +465,13 @@
           "value": "'div'",
           "computed": false
         }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
       }
     }
   },
@@ -862,6 +904,13 @@
           "computed": false
         }
       },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
+      },
       "wrap": {
         "type": {
           "name": "enum",
@@ -1142,6 +1191,13 @@
           "value": "'default'",
           "computed": false
         }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
       }
     }
   },
@@ -1230,6 +1286,13 @@
         },
         "required": false,
         "description": "The url to refer to"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
       },
       "TypographyClasses": {
         "type": {
@@ -1328,6 +1391,13 @@
           "value": "false",
           "computed": false
         }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
       }
     }
   },
@@ -1493,6 +1563,13 @@
           "value": "false",
           "computed": false
         }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
       },
       "variant": {
         "type": {

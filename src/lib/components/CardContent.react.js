@@ -11,11 +11,12 @@ import CardContent1 from '@material-ui/core/CardContent'
  */
 export default class CardContent extends Component {
     render() {
-        const {children, classes, component} = this.props;
+        const {children, classes, component, style} = this.props;
         return (
             <CardContent1   
             classes={classes}
             component={component}
+            style={style}
             >
                 {children}
             </CardContent1>
@@ -40,4 +41,8 @@ CardContent.propTypes = {
      * The component used for the root node. Either a string to use a DOM element or a component.
      */
     component: PropTypes.Component,
+    /**
+     * Add style object
+     */
+    style: PropTypes.object,
 };

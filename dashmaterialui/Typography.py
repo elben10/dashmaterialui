@@ -23,14 +23,15 @@ Keyword arguments:
 - internalDeprecatedVariant (boolean; optional): A deprecated variant is used from an internal component. Users don't need a deprecation warning here if they switched to the v2 theme. They already get the mapping that will be applied in the next major release.
 - noWrap (boolean; optional): If true, the text will not wrap, but instead will truncate with an ellipsis.
 - paragraph (boolean; optional): If true, the text will have a bottom margin.
+- style (dict; optional): Add style object
 - variant (a value equal to: 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'subtitle1', 'subtitle2', 'body1', 'body2', 'caption', 'button', 'overline', 'srOnly', 'inherit', "display4", 'display3', 'display2', 'display1', 'headline', 'title', 'subheading'; optional): Applies the theme typography styles. Use body1 as the default value with the legacy implementation and body2 with the new one."""
     @_explicitize_args
-    def __init__(self, children=None, align=Component.UNDEFINED, classes=Component.UNDEFINED, color=Component.UNDEFINED, component=Component.UNDEFINED, gutterBottom=Component.UNDEFINED, headlineMapping=Component.UNDEFINED, inline=Component.UNDEFINED, internalDeprecatedVariant=Component.UNDEFINED, noWrap=Component.UNDEFINED, paragraph=Component.UNDEFINED, variant=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'align', 'classes', 'color', 'component', 'gutterBottom', 'headlineMapping', 'inline', 'internalDeprecatedVariant', 'noWrap', 'paragraph', 'variant']
+    def __init__(self, children=None, align=Component.UNDEFINED, classes=Component.UNDEFINED, color=Component.UNDEFINED, component=Component.UNDEFINED, gutterBottom=Component.UNDEFINED, headlineMapping=Component.UNDEFINED, inline=Component.UNDEFINED, internalDeprecatedVariant=Component.UNDEFINED, noWrap=Component.UNDEFINED, paragraph=Component.UNDEFINED, style=Component.UNDEFINED, variant=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'align', 'classes', 'color', 'component', 'gutterBottom', 'headlineMapping', 'inline', 'internalDeprecatedVariant', 'noWrap', 'paragraph', 'style', 'variant']
         self._type = 'Typography'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'align', 'classes', 'color', 'component', 'gutterBottom', 'headlineMapping', 'inline', 'internalDeprecatedVariant', 'noWrap', 'paragraph', 'variant']
+        self.available_properties = ['children', 'align', 'classes', 'color', 'component', 'gutterBottom', 'headlineMapping', 'inline', 'internalDeprecatedVariant', 'noWrap', 'paragraph', 'style', 'variant']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')
