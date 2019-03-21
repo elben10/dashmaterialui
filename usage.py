@@ -3,8 +3,9 @@ import dash
 from dash.dependencies import Input, Output
 import dash_html_components as html
 
+external_stylesheets = ["https://fonts.googleapis.com/icon?family=Material+Icons"]
 
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.scripts.config.serve_locally = True
 app.css.config.serve_locally = True
@@ -22,7 +23,10 @@ app.layout = html.Div([
     dashmaterialui.Paper(html.Div("HEJSA", style={'height': '10cm'})),
     dashmaterialui.Typography("h1. Heading", component="h2", variant="h1"),
     dashmaterialui.Link("hejsa", href='/'),
+    dashmaterialui.Icon('add_circle', color="action"),
+    dashmaterialui.Icon('add_circle', color="primarily"),
 ])
+
 
 
 if __name__ == '__main__':
