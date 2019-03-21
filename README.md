@@ -71,7 +71,7 @@ DashMaterialUI is a Dash component library.
 - [ ] NativeSelect
 - [ ] NoSsr
 - [ ] OutlinedInput
-- [ ] Paper
+- [x] Paper
 - [ ] Popover
 - [ ] Popper
 - [ ] Portal

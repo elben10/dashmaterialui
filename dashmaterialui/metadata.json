@@ -679,5 +679,60 @@
         }
       }
     }
+  },
+  "src/lib/components/Paper.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "Paper",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content of the component."
+      },
+      "classes": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
+      },
+      "component": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.Component"
+        },
+        "required": false,
+        "description": "The component used for the root node. Either a string to use a DOM element or a component.",
+        "defaultValue": {
+          "value": "'div'",
+          "computed": false
+        }
+      },
+      "elevation": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Shadow depth, corresponds to dp in the spec. It's accepting values between 0 and 24 inclusive.",
+        "defaultValue": {
+          "value": "2",
+          "computed": false
+        }
+      },
+      "square": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, rounded corners are disabled.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      }
+    }
   }
 }
