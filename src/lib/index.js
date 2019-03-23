@@ -1,6 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import AppBar from './components/AppBar.react';
 import Avatar from './components/Avatar.react';
+import Badge from './components/Badge.react';
 import Card from './components/Card.react';
 import CardActionArea from './components/CardActionArea.react';
 import CardActions from './components/CardActions.react';
@@ -24,6 +25,7 @@ import Typography from './components/Typography.react';
 export {
     AppBar,
     Avatar,
+    Badge,
     Card,
     CardActionArea,
     CardActions,

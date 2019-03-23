@@ -1,5 +1,6 @@
 from .AppBar import AppBar
 from .Avatar import Avatar
+from .Badge import Badge
 from .Button import Button
 from .Card import Card
 from .CardActionArea import CardActionArea
@@ -23,6 +24,7 @@ from .Typography import Typography
 __all__ = [
     "AppBar",
     "Avatar",
+    "Badge",
     "Button",
     "Card",
     "CardActionArea",

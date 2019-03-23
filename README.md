@@ -5,7 +5,7 @@ DashMaterialUI is a Dash component library.
 - [x] AppBar
 - [x] Avatar
 - [ ] Backdrop
-- [ ] Badge
+- [x] Badge
 - [ ] BottomNavigation
 - [ ] BottomNavigationAction
 - [x] Button

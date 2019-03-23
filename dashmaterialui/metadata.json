@@ -164,6 +164,132 @@
       }
     }
   },
+  "src/lib/components/Badge.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "Badge",
+    "methods": [],
+    "props": {
+      "badgeContent": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content rendered within the badge."
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The badge will be added relative to this node."
+      },
+      "classes": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
+      },
+      "color": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'default'",
+              "computed": false
+            },
+            {
+              "value": "'primary'",
+              "computed": false
+            },
+            {
+              "value": "'secondary'",
+              "computed": false
+            },
+            {
+              "value": "'error'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The color of the component. It supports those theme colors that make sense for this component.",
+        "defaultValue": {
+          "value": "'default'",
+          "computed": false
+        }
+      },
+      "component": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.Component"
+        },
+        "required": false,
+        "description": "The component used for the root node. Either a string to use a DOM element or a component.",
+        "defaultValue": {
+          "value": "'span'",
+          "computed": false
+        }
+      },
+      "invisible": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the badge will be invisible."
+      },
+      "max": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Max count to show.",
+        "defaultValue": {
+          "value": "99",
+          "computed": false
+        }
+      },
+      "showZero": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Controls whether the badge is hidden when badgeContent is zero.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
+      },
+      "variant": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'standard'",
+              "computed": false
+            },
+            {
+              "value": "'dot'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The variant to use.",
+        "defaultValue": {
+          "value": "'standard'",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/Button.react.js": {
     "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
     "displayName": "Button",

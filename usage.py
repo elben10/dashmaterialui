@@ -143,6 +143,7 @@ app.layout = html.Div(
             ),
             style={"width": 700},
         ),
+        dashmaterialui.Badge(dashmaterialui.Icon('mail'), badgeContent='h4', color="primary", classes={'root': {'color': 'red'}})
     ]
 )
 
