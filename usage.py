@@ -68,7 +68,7 @@ app.layout = html.Div(
         dashmaterialui.Icon("add_circle", color="action"),
         dashmaterialui.Icon("add_circle", color="primary"),
         dashmaterialui.Button("BUTTON", href="/"),
-        dashmaterialui.AppBar(dashmaterialui.Button("BUTTON", href="/")),
+        dashmaterialui.AppBar(dashmaterialui.Toolbar(dashmaterialui.Button("BUTTON", href="/"))),
         dashmaterialui.Grid(
             [
                 dashmaterialui.Grid(

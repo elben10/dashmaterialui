@@ -18,6 +18,7 @@ import TableCell from './components/TableCell.react';
 import TableFooter from './components/TableFooter.react';
 import TableHead from './components/TableHead.react';
 import TableRow from './components/TableRow.react';
+import Toolbar from './components/Toolbar.react';
 import Typography from './components/Typography.react';
 
 export {
@@ -40,5 +41,6 @@ export {
     TableFooter,
     TableHead,
     TableRow,
+    Toolbar,
     Typography,
 };

@@ -1989,6 +1989,66 @@
       }
     }
   },
+  "src/lib/components/Toolbar.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is ediToolbar by the user.",
+    "displayName": "Toolbar",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Toolbar children, usually a mixture of IconButton, Button and Typography."
+      },
+      "classes": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
+      },
+      "disableGutters": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, disables gutter padding.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
+      },
+      "variant": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'regular'",
+              "computed": false
+            },
+            {
+              "value": "'dense'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The variant to use.",
+        "defaultValue": {
+          "value": "'regular'",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/Typography.react.js": {
     "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
     "displayName": "Typography",

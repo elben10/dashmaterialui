@@ -17,6 +17,7 @@ from .TableCell import TableCell
 from .TableFooter import TableFooter
 from .TableHead import TableHead
 from .TableRow import TableRow
+from .Toolbar import Toolbar
 from .Typography import Typography
 
 __all__ = [
@@ -39,5 +40,6 @@ __all__ = [
     "TableFooter",
     "TableHead",
     "TableRow",
+    "Toolbar",
     "Typography"
 ]
