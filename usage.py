@@ -105,12 +105,44 @@ app.layout = html.Div(
                     xs=2,
                     item=True,
                 ),
-                html.H1(**{'data-ged':2}),
-                dashmaterialui.Grid(dashmaterialui.Card(dashmaterialui.CardActionArea(dashmaterialui.CardMedia(image='https://images.unsplash.com/photo-1552958459-fcfd899af723?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=moises-alex-1447758-unsplash.jpg', style={'height': '100px'})), style={'height': '100%'}), item=True, xs=2)
+                html.H1(**{"data-ged": 2}),
             ],
             container=True,
         ),
-        dashmaterialui.GridList()
+        dashmaterialui.Paper(
+            dashmaterialui.Table(
+                [
+                    dashmaterialui.TableHead(
+                        dashmaterialui.TableRow(
+                            [
+                                dashmaterialui.TableCell("Dessert (100g serving)"),
+                                dashmaterialui.TableCell("Calories", align="right"),
+                                dashmaterialui.TableCell("Fat (g)", align="right"),
+                            ]
+                        )
+                    ),
+                    dashmaterialui.TableBody(
+                        dashmaterialui.TableRow(
+                            [
+                                dashmaterialui.TableCell("Dessert (100g serving)"),
+                                dashmaterialui.TableCell("Calories", align="right"),
+                                dashmaterialui.TableCell("Fat (g)", align="right"),
+                            ]
+                        )
+                    ),
+                    dashmaterialui.TableFooter(
+                        dashmaterialui.TableRow(
+                            [
+                                dashmaterialui.TableCell("Dessert (100g serving)"),
+                                dashmaterialui.TableCell("Calories", align="right"),
+                                dashmaterialui.TableCell("Fat (g)", align="right"),
+                            ]
+                        )
+                    ),
+                ]
+            ),
+            style={"width": 700},
+        ),
     ]
 )
 

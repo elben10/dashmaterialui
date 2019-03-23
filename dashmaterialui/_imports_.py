@@ -11,6 +11,12 @@ from .GridList import GridList
 from .Icon import Icon
 from .Link import Link
 from .Paper import Paper
+from .Table import Table
+from .TableBody import TableBody
+from .TableCell import TableCell
+from .TableFooter import TableFooter
+from .TableHead import TableHead
+from .TableRow import TableRow
 from .Typography import Typography
 
 __all__ = [
@@ -27,5 +33,11 @@ __all__ = [
     "Icon",
     "Link",
     "Paper",
+    "Table",
+    "TableBody",
+    "TableCell",
+    "TableFooter",
+    "TableHead",
+    "TableRow",
     "Typography"
 ]

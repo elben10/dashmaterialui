@@ -1559,6 +1559,436 @@
       }
     }
   },
+  "src/lib/components/Table.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "Table",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content of the table, normally TableHead and TableBody."
+      },
+      "classes": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
+      },
+      "component": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.Component"
+        },
+        "required": false,
+        "description": "The component used for the root node. Either a string to use a DOM element or a component.",
+        "defaultValue": {
+          "value": "'table'",
+          "computed": false
+        }
+      },
+      "padding": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'default'",
+              "computed": false
+            },
+            {
+              "value": "'checkbox'",
+              "computed": false
+            },
+            {
+              "value": "'dense'",
+              "computed": false
+            },
+            {
+              "value": "'none'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Allows TableCells to inherit padding of the Table.",
+        "defaultValue": {
+          "value": "'default'",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
+      }
+    }
+  },
+  "src/lib/components/TableBody.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "Table",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content of the table, normally TableHead and TableBody."
+      },
+      "classes": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
+      },
+      "component": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.Component"
+        },
+        "required": false,
+        "description": "The component used for the root node. Either a string to use a DOM element or a component.",
+        "defaultValue": {
+          "value": "'table'",
+          "computed": false
+        }
+      },
+      "padding": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'default'",
+              "computed": false
+            },
+            {
+              "value": "'checkbox'",
+              "computed": false
+            },
+            {
+              "value": "'dense'",
+              "computed": false
+            },
+            {
+              "value": "'none'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Allows TableCells to inherit padding of the Table.",
+        "defaultValue": {
+          "value": "'default'",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
+      }
+    }
+  },
+  "src/lib/components/TableCell.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is ediTableCell by the user.",
+    "displayName": "TableCell",
+    "methods": [],
+    "props": {
+      "align": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'inherit'",
+              "computed": false
+            },
+            {
+              "value": "'left'",
+              "computed": false
+            },
+            {
+              "value": "'center'",
+              "computed": false
+            },
+            {
+              "value": "'right'",
+              "computed": false
+            },
+            {
+              "value": "'justify'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Set the text-align on the table cell content. Monetary or generally number fields should be right aligned as that allows you to add them up quickly in your head without having to worry about decimals.",
+        "defaultValue": {
+          "value": "'inherit'",
+          "computed": false
+        }
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The table cell contents."
+      },
+      "classes": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
+      },
+      "component": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.Component"
+        },
+        "required": false,
+        "description": "The component used for the root node. Either a string to use a DOM element or a component."
+      },
+      "padding": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'default'",
+              "computed": false
+            },
+            {
+              "value": "'checkbox'",
+              "computed": false
+            },
+            {
+              "value": "'dense'",
+              "computed": false
+            },
+            {
+              "value": "'none'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Sets the padding applied to the cell. By default, the Table parent component set the value."
+      },
+      "scope": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Set scope attribute."
+      },
+      "sortDirection": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'asc'",
+              "computed": false
+            },
+            {
+              "value": "'desc'",
+              "computed": false
+            },
+            {
+              "value": "false",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Set aria-sort direction."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
+      },
+      "varaint": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'head'",
+              "computed": false
+            },
+            {
+              "value": "'body'",
+              "computed": false
+            },
+            {
+              "value": "'footer'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Specify the cell type. By default, the TableHead, TableBody or TableFooter parent component set the value."
+      }
+    }
+  },
+  "src/lib/components/TableFooter.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is ediTableFooter by the user.",
+    "displayName": "TableFooter",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content of the component, normally TableRow."
+      },
+      "classes": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
+      },
+      "component": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.Component"
+        },
+        "required": false,
+        "description": "The component used for the root node. Either a string to use a DOM element or a component.",
+        "defaultValue": {
+          "value": "'tfoot'",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
+      }
+    }
+  },
+  "src/lib/components/TableHead.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is ediTableHead by the user.",
+    "displayName": "TableHead",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content of the component, normally TableRow."
+      },
+      "classes": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
+      },
+      "component": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.Component"
+        },
+        "required": false,
+        "description": "The component used for the root node. Either a string to use a DOM element or a component.",
+        "defaultValue": {
+          "value": "'thead'",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
+      },
+      "padding": {
+        "defaultValue": {
+          "value": "'default'",
+          "computed": false
+        },
+        "required": false
+      }
+    }
+  },
+  "src/lib/components/TableRow.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is ediTableRow by the user.",
+    "displayName": "TableRow",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Should be valid <tr> children such as TableCell."
+      },
+      "classes": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
+      },
+      "component": {
+        "type": {
+          "name": "custom",
+          "raw": "PropTypes.Component"
+        },
+        "required": false,
+        "description": "The component used for the root node. Either a string to use a DOM element or a component.",
+        "defaultValue": {
+          "value": "'tr'",
+          "computed": false
+        }
+      },
+      "hover": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the table row will shade on hover.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "selected": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the table row will have the selected shading.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
+      }
+    }
+  },
   "src/lib/components/Typography.react.js": {
     "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
     "displayName": "Typography",
