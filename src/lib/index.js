@@ -16,6 +16,7 @@ import Icon from './components/Icon.react';
 import IconButton from './components/IconButton.react';
 import Link from './components/Link.react';
 import List from './components/List.react';
+import ListItem from './components/ListItem.react';
 import Paper from './components/Paper.react';
 import Table from './components/Table.react';
 import TableBody from './components/TableBody.react';
@@ -44,6 +45,7 @@ export {
     IconButton,
     Link,
     List,
+    ListItem,
     Paper,
     Table,
     TableBody,

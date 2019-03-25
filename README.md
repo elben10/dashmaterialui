@@ -56,7 +56,7 @@ DashMaterialUI is a Dash component library.
 - [ ] LinearProgress
 - [x] Link
 - [x] List
-- [ ] ListItem
+- [x] ListItem
 - [ ] ListItemAvatar
 - [ ] ListItemIcon
 - [ ] ListItemSecondaryAction
