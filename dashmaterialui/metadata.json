@@ -2202,6 +2202,38 @@
       }
     }
   },
+  "src/lib/components/ListItemAvatar.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "ListItemAvatar",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "element"
+        },
+        "required": false,
+        "description": "The content of the component \u2013 normally Avatar."
+      },
+      "classes": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
+      }
+    }
+  },
   "src/lib/components/Paper.react.js": {
     "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
     "displayName": "Paper",
