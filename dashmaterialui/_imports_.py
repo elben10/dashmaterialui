@@ -7,6 +7,7 @@ from .CardActionArea import CardActionArea
 from .CardActions import CardActions
 from .CardContent import CardContent
 from .CardMedia import CardMedia
+from .CircularProgress import CircularProgress
 from .Grid import Grid
 from .GridList import GridList
 from .Icon import Icon
@@ -31,6 +32,7 @@ __all__ = [
     "CardActions",
     "CardContent",
     "CardMedia",
+    "CircularProgress",
     "Grid",
     "GridList",
     "Icon",

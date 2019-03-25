@@ -712,6 +712,121 @@
       }
     }
   },
+  "src/lib/components/CircularProgress.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "CircularProgress",
+    "methods": [],
+    "props": {
+      "classes": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "color": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'primary'",
+              "computed": false
+            },
+            {
+              "value": "'secondary'",
+              "computed": false
+            },
+            {
+              "value": "'inherit'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The color of the component. It supports those theme colors that make sense for this component.",
+        "defaultValue": {
+          "value": "'primary'",
+          "computed": false
+        }
+      },
+      "disableShrink": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the shrink animation is disabled. This only works if variant is indeterminate.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The size of the circle.",
+        "defaultValue": {
+          "value": "40",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
+      },
+      "value": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The value of the progress indicator for the determinate and static variants. Value between 0 and 100.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "variant": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'determinate'",
+              "computed": false
+            },
+            {
+              "value": "'indeterminate'",
+              "computed": false
+            },
+            {
+              "value": "'static'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "The variant to use. Use indeterminate when there is no progress value.",
+        "defaultValue": {
+          "value": "'indeterminate'",
+          "computed": false
+        }
+      },
+      "thickness": {
+        "defaultValue": {
+          "value": "3.6",
+          "computed": false
+        },
+        "required": false
+      }
+    }
+  },
   "src/lib/components/Grid.react.js": {
     "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
     "displayName": "Grid",
