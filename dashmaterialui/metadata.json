@@ -2234,6 +2234,88 @@
       }
     }
   },
+  "src/lib/components/ListItemText.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "ListItemText",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Alias for the primary property."
+      },
+      "classes": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "disableTypography": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the children won't be wrapped by a Typography component. This can be useful to render an alternative Typography variant by wrapping the children (or primary) text, and optional secondary text with the Typography component.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "inset": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the children will be indented. This should be used if there is no left avatar or left icon.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "primary": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "The main content element."
+      },
+      "primaryTypographyProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "These props will be forwarded to the primary typography component (as long as disableTypography is not true)."
+      },
+      "secondary": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The secondary content element."
+      },
+      "secondaryTypographyProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "These props will be forwarded to the secondary typography component (as long as disableTypography is not true)."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
+      }
+    }
+  },
   "src/lib/components/Paper.react.js": {
     "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
     "displayName": "Paper",

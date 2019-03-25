@@ -18,6 +18,7 @@ import Link from './components/Link.react';
 import List from './components/List.react';
 import ListItem from './components/ListItem.react';
 import ListItemAvatar from './components/ListItemAvatar.react';
+import ListItemText from './components/ListItemText.react';
 import Paper from './components/Paper.react';
 import Table from './components/Table.react';
 import TableBody from './components/TableBody.react';
@@ -48,6 +49,7 @@ export {
     List,
     ListItem,
     ListItemAvatar,
+    ListItemText,
     Paper,
     Table,
     TableBody,

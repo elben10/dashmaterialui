@@ -17,6 +17,7 @@ from .Link import Link
 from .List import List
 from .ListItem import ListItem
 from .ListItemAvatar import ListItemAvatar
+from .ListItemText import ListItemText
 from .Paper import Paper
 from .Table import Table
 from .TableBody import TableBody
@@ -47,6 +48,7 @@ __all__ = [
     "List",
     "ListItem",
     "ListItemAvatar",
+    "ListItemText",
     "Paper",
     "Table",
     "TableBody",
