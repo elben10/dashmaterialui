@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Avatar1 from '@material-ui/core/Avatar'
+import Avatar1 from '@material-ui/core/Avatar';
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -11,25 +12,33 @@ import Avatar1 from '@material-ui/core/Avatar'
  */
 export default class Avatar extends Component {
     render() {
-        const {alt, children, classes, component, imgProps, sizes, src, srcSet, style} = this.props;
+        const { alt, children, classes, component, imgProps, sizes, src, srcSet, style } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <Avatar1   
-            alt={alt}
-            classes={classes}
-            component={component}
-            imgProps={imgProps}
-            sizes={sizes}
-            src={src}
-            srcSet={srcSet}
-            style={style}
-            >
-                {children}
-            </Avatar1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <Avatar1
+                            alt={alt}
+                            className={classes.root}
+                            component={component}
+                            imgProps={imgProps}
+                            sizes={sizes}
+                            src={src}
+                            srcSet={srcSet}
+                            style={style}
+                        >
+                            {children}
+                        </Avatar1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 Avatar.defaultProps = {
+    classes: {},
     component: 'div',
 };
 

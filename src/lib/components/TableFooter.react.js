@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import TableFooter1 from '@material-ui/core/TableFooter'
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,19 +13,27 @@ import TableFooter1 from '@material-ui/core/TableFooter'
 export default class TableFooter extends Component {
     render() {
         const {children, classes, component, style} = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <TableFooter1   
-            classes={classes}
-            component={component}
-            style={style}
-            >
-                {children}
-            </TableFooter1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <TableFooter1   
+                        className={classes.root}
+                        component={component}
+                        style={style}
+                        >
+                            {children}
+                        </TableFooter1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 TableFooter.defaultProps = {
+    classes: {},
     component: 'tfoot',
 };
 

@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Grid1 from '@material-ui/core/Grid'
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -11,29 +12,37 @@ import Grid1 from '@material-ui/core/Grid'
  */
 export default class Grid extends Component {
     render() {
-        const {alignContent, alignItems, children, classes, component, container, direction, item, justify, lg, md, sm, spacing, style, wrap, xl, xs, zeroMinWidth} = this.props;
+        const { alignContent, alignItems, children, classes, component, container, direction, id, item, justify, lg, md, sm, spacing, style, wrap, xl, xs, zeroMinWidth } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <Grid1
-                alignContent={alignContent}
-                alignItems={alignItems}
-                classes={classes}
-                component={component}
-                container={container}
-                direction={direction}
-                item={item}
-                justify={justify}
-                lg={lg}
-                md={md}
-                sm={sm}
-                spacing={spacing}
-                style={style}
-                wrap={wrap}
-                xl={xl}
-                xs={xs}
-                zeroMinWidth={zeroMinWidth}
-            >
-                {children}
-            </Grid1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <Grid1
+                            alignContent={alignContent}
+                            alignItems={alignItems}
+                            className={classes.root}
+                            component={component}
+                            container={container}
+                            direction={direction}
+                            id={id}
+                            item={item}
+                            justify={justify}
+                            lg={lg}
+                            md={md}
+                            sm={sm}
+                            spacing={spacing}
+                            style={style}
+                            wrap={wrap}
+                            xl={xl}
+                            xs={xs}
+                            zeroMinWidth={zeroMinWidth}
+                        >
+                            {children}
+                        </Grid1>
+                    )
+                }
+            </Styled>
         );
     }
 }
@@ -41,6 +50,7 @@ export default class Grid extends Component {
 Grid.defaultProps = {
     alignContent: 'stretch',
     alignItems: 'stretch',
+    classes: {},
     component: 'div',
     container: false,
     direction: 'row',
@@ -84,7 +94,8 @@ Grid.propTypes = {
     /**
      *  Defines the flex-direction style property. It is applied for all screen sizes.
      */
-    direction: PropTypes.oneOf('row', 'row-reverse', 'column', 'column-reverse'),
+    direction: PropTypes.oneOf(['row', 'row-reverse', 'column', 'column-reverse']),
+    id: PropTypes.string,
     /**
      * If true, the component will have the flex item behavior. You should be wrapping items with a container.
      */

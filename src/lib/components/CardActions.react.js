@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import CardActions1 from '@material-ui/core/CardActions'
+import CardActions1 from '@material-ui/core/CardActions';
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -11,20 +12,28 @@ import CardActions1 from '@material-ui/core/CardActions'
  */
 export default class CardActions extends Component {
     render() {
-        const {children, classes, disableActionSpacing, style} = this.props;
+        const { children, classes, disableActionSpacing, style } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <CardActions1   
-            classes={classes}
-            disableActionSpacing={disableActionSpacing}
-            style={style}
-            >
-                {children}
-            </CardActions1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <CardActions1
+                            className={classes.root}
+                            disableActionSpacing={disableActionSpacing}
+                            style={style}
+                        >
+                            {children}
+                        </CardActions1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 CardActions.defaultProps = {
+    classes: {},
     disableActionSpacing: false,
 };
 

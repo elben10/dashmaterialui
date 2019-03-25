@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import AppBar1 from '@material-ui/core/AppBar'
+import AppBar1 from '@material-ui/core/AppBar';
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -11,21 +12,29 @@ import AppBar1 from '@material-ui/core/AppBar'
  */
 export default class AppBar extends Component {
     render() {
-        const {children, classes, color, position, style} = this.props;
+        const { children, classes, color, position, style } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <AppBar1   
-            classes={classes}
-            color={color}
-            position={position}
-            style={style}
-            >
-                {children}
-            </AppBar1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <AppBar1
+                            className={classes.root}
+                            color={color}
+                            position={position}
+                            style={style}
+                        >
+                            {children}
+                        </AppBar1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 AppBar.defaultProps = {
+    classes: {},
     color: 'primary',
     position: 'fixed',
 };

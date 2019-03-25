@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import TableCell1 from '@material-ui/core/TableCell'
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -11,26 +12,34 @@ import TableCell1 from '@material-ui/core/TableCell'
  */
 export default class TableCell extends Component {
     render() {
-        const {align, children, classes, component, padding, scope, sortDirection, style, variant} = this.props;
+        const { align, children, classes, component, padding, scope, sortDirection, style, variant } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <TableCell1   
-            align={align}
-            classes={classes}
-            component={component}
-            padding={padding}
-            scope={scope}
-            sortDirection={sortDirection}
-            style={style}
-            variant={variant}
-            >
-                {children}
-            </TableCell1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <TableCell1
+                            align={align}
+                            className={classes.root}
+                            component={component}
+                            padding={padding}
+                            scope={scope}
+                            sortDirection={sortDirection}
+                            style={style}
+                            variant={variant}
+                        >
+                            {children}
+                        </TableCell1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 TableCell.defaultProps = {
     align: 'inherit',
+    classes: {},
 };
 
 TableCell.propTypes = {

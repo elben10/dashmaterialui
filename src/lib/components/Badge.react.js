@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Badge1 from '@material-ui/core/Badge'
+import Badge1 from '@material-ui/core/Badge';
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,25 +13,33 @@ import Badge1 from '@material-ui/core/Badge'
 export default class Badge extends Component {
     render() {
         const { badgeContent, children, classes, color, component, invisible, max, showZero, style, variant } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <Badge1
-                badgeContent={badgeContent}
-                color={color}
-                classes={classes}
-                component={component}
-                invisible={invisible}
-                max={max}
-                showZero={showZero}
-                style={style}
-                variant={variant}
-            >
-                {children}
-            </Badge1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <Badge1
+                            badgeContent={badgeContent}
+                            color={color}
+                            className={classes.root}
+                            component={component}
+                            invisible={invisible}
+                            max={max}
+                            showZero={showZero}
+                            style={style}
+                            variant={variant}
+                        >
+                            {children}
+                        </Badge1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 Badge.defaultProps = {
+    classes: {},
     color: 'default',
     component: 'span',
     max: 99,

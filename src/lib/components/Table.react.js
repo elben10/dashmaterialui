@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Table1 from '@material-ui/core/Table'
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -11,21 +12,29 @@ import Table1 from '@material-ui/core/Table'
  */
 export default class Table extends Component {
     render() {
-        const {children, classes, component, padding, style} = this.props;
+        const { children, classes, component, padding, style } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <Table1   
-            classes={classes}
-            component={component}
-            padding={padding}
-            style={style}
-            >
-                {children}
-            </Table1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <Table1
+                            className={classes.root}
+                            component={component}
+                            padding={padding}
+                            style={style}
+                        >
+                            {children}
+                        </Table1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 Table.defaultProps = {
+    classes: {},
     component: 'table',
     padding: 'default',
 };

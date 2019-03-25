@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import CardActionArea1 from '@material-ui/core/CardActionArea'
+import CardActionArea1 from '@material-ui/core/CardActionArea';
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -11,19 +12,28 @@ import CardActionArea1 from '@material-ui/core/CardActionArea'
  */
 export default class CardActionArea extends Component {
     render() {
-        const {children, classes, style} = this.props;
+        const { children, classes, style } = this.props;
+        const Styled = createStyled({ root: classes });
         return (
-            <CardActionArea1   
-            classes={classes}
-            style={style}
-            >
-                {children}
-            </CardActionArea1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <CardActionArea1
+                            className={classes.root}
+                            style={style}
+                        >
+                            {children}
+                        </CardActionArea1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
-CardActionArea.defaultProps = {};
+CardActionArea.defaultProps = {
+    classes: {},
+};
 
 CardActionArea.propTypes = {
     /**

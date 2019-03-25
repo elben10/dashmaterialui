@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Typography1 from '@material-ui/core/Typography'
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,29 +13,37 @@ import Typography1 from '@material-ui/core/Typography'
 export default class Typography extends Component {
     render() {
         const { align, children, classes, color, component, gutterBottom, headlineMapping, inline, internalDeprecatedVariant, noWrap, paragraph, style, variant } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <Typography1
-                align={align}
-                classes={classes}
-                color={color}
-                component={component}
-                gutterBottom={gutterBottom}
-                headlineMapping={headlineMapping}
-                inline={inline}
-                internalDeprecatedVariant={internalDeprecatedVariant}
-                noWrap={noWrap}
-                paragraph={paragraph}
-                style={style}
-                variant={variant}
-            >
-                {children}
-            </Typography1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <Typography1
+                            align={align}
+                            className={classes.root}
+                            color={color}
+                            component={component}
+                            gutterBottom={gutterBottom}
+                            headlineMapping={headlineMapping}
+                            inline={inline}
+                            internalDeprecatedVariant={internalDeprecatedVariant}
+                            noWrap={noWrap}
+                            paragraph={paragraph}
+                            style={style}
+                            variant={variant}
+                        >
+                            {children}
+                        </Typography1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 Typography.defaultProps = {
     align: 'inherit',
+    classes: {},
     color: 'default',
     gutterBottom: false,
     headlineMapping: { h1: 'h1', h2: 'h2', h3: 'h3', h4: 'h4', h5: 'h5', h6: 'h6', subtitle1: 'h6', subtitle2: 'h6', body1: 'p', body2: 'p' },

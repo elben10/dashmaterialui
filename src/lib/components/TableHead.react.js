@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import TableHead1 from '@material-ui/core/TableHead'
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -11,20 +12,28 @@ import TableHead1 from '@material-ui/core/TableHead'
  */
 export default class TableHead extends Component {
     render() {
-        const {children, classes, component, style} = this.props;
+        const { children, classes, component, style } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <TableHead1   
-            classes={classes}
-            component={component}
-            style={style}
-            >
-                {children}
-            </TableHead1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <TableHead1
+                            className={classes.root}
+                            component={component}
+                            style={style}
+                        >
+                            {children}
+                        </TableHead1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 TableHead.defaultProps = {
+    classes: {},
     component: 'thead',
     padding: 'default',
 };

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Icon1 from '@material-ui/core/Icon'
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,21 +13,29 @@ import Icon1 from '@material-ui/core/Icon'
 export default class Icon extends Component {
     render() {
         const { children, classes, color, component, fontSize, style } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <Icon1
-                color={color}
-                classes={classes}
-                component={component}
-                fontSize={fontSize}
-                style={style}
-            >
-                {children}
-            </Icon1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <Icon1
+                            color={color}
+                            className={classes.root}
+                            component={component}
+                            fontSize={fontSize}
+                            style={style}
+                        >
+                            {children}
+                        </Icon1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 Icon.defaultProps = {
+    classes: {},
     color: 'inherit',
     component: 'span',
     fontSize: 'default',

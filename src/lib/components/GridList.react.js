@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import GridList1 from '@material-ui/core/GridList'
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -11,24 +12,32 @@ import GridList1 from '@material-ui/core/GridList'
  */
 export default class GridList extends Component {
     render() {
-        const {cellHeight, children, classes, cols, component, spacing, style} = this.props;
+        const { cellHeight, children, classes, cols, component, spacing, style } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <GridList1   
-            cellHeight={cellHeight}
-            classes={classes}
-            cols={cols}
-            component={component}
-            spacing={spacing}
-            style={style}
-            >
-                {children}
-            </GridList1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <GridList1
+                            cellHeight={cellHeight}
+                            className={classes.root}
+                            cols={cols}
+                            component={component}
+                            spacing={spacing}
+                            style={style}
+                        >
+                            {children}
+                        </GridList1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 GridList.defaultProps = {
     cellHeight: 180,
+    classes: {},
     cols: 2,
     component: 'ul',
     spacing: 4,

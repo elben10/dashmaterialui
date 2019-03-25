@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Toolbar1 from '@material-ui/core/Toolbar'
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -11,21 +12,29 @@ import Toolbar1 from '@material-ui/core/Toolbar'
  */
 export default class Toolbar extends Component {
     render() {
-        const {children, classes, disableGutters, style, variant} = this.props;
+        const { children, classes, disableGutters, style, variant } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <Toolbar1   
-            classes={classes}
-            disableGutters={disableGutters}
-            style={style}
-            variant={variant}
-            >
-                {children}
-            </Toolbar1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <Toolbar1
+                            className={classes.root}
+                            disableGutters={disableGutters}
+                            style={style}
+                            variant={variant}
+                        >
+                            {children}
+                        </Toolbar1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 Toolbar.defaultProps = {
+    classes: {},
     disableGutters: false,
     variant: 'regular',
 };

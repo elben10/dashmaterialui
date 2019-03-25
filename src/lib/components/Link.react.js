@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Link1 from '@material-ui/core/Link'
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,26 +13,34 @@ import Link1 from '@material-ui/core/Link'
 export default class Link extends Component {
     render() {
         const { block, children, classes, color, component, href, style, TypographyClasses, underline, variant } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <Link1
-                block={block}
-                color={color}
-                classes={classes}
-                component={component}
-                href={href}
-                style={style}
-                TypographyClasses={TypographyClasses}
-                underline={underline}
-                variant={variant}
-            >
-                {children}
-            </Link1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <Link1
+                            block={block}
+                            color={color}
+                            className={classes.root}
+                            component={component}
+                            href={href}
+                            style={style}
+                            TypographyClasses={TypographyClasses}
+                            underline={underline}
+                            variant={variant}
+                        >
+                            {children}
+                        </Link1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 Link.defaultProps = {
     block: false,
+    classes: {},
     color: 'primary',
     component: 'a',
     underline: 'hover',

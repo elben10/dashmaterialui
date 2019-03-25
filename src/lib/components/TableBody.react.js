@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Table1 from '@material-ui/core/Table'
+import TableBody1 from '@material-ui/core/TableBody'
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -9,28 +10,36 @@ import Table1 from '@material-ui/core/Table'
  * It renders an input with the property `value`
  * which is editable by the user.
  */
-export default class Table extends Component {
+export default class TableBody extends Component {
     render() {
-        const {children, classes, component, padding, style} = this.props;
+        const { children, classes, component, padding, style } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <Table1   
-            classes={classes}
-            component={component}
-            padding={padding}
-            style={style}
-            >
-                {children}
-            </Table1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <TableBody1
+                            className={classes.root}
+                            component={component}
+                            padding={padding}
+                            style={style}
+                        >
+                            {children}
+                        </TableBody1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
-Table.defaultProps = {
-    component: 'table',
+TableBody.defaultProps = {
+    classes: {},
+    component: 'tbody',
     padding: 'default',
 };
 
-Table.propTypes = {
+TableBody.propTypes = {
     /**
      *  The content of the table, normally TableHead and TableBody.
      */

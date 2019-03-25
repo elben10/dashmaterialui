@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Card1 from '@material-ui/core/Card'
+import Card1 from '@material-ui/core/Card';
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -11,20 +12,28 @@ import Card1 from '@material-ui/core/Card'
  */
 export default class Card extends Component {
     render() {
-        const {children, classes, raised, style} = this.props;
+        const { children, classes, raised, style } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <Card1   
-            classes={classes}
-            raised={raised}
-            style={style}
-            >
-                {children}
-            </Card1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <Card1
+                            className={classes.root}
+                            raised={raised}
+                            style={style}
+                        >
+                            {children}
+                        </Card1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 Card.defaultProps = {
+    classes: {},
     raised: false,
 };
 

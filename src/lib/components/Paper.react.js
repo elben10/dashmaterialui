@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Paper1 from '@material-ui/core/Paper'
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -11,22 +12,30 @@ import Paper1 from '@material-ui/core/Paper'
  */
 export default class Paper extends Component {
     render() {
-        const {children, classes, component, elevation, square, style} = this.props;
+        const { children, classes, component, elevation, square, style } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <Paper1   
-            classes={classes}
-            component={component}
-            elevation={elevation}
-            square={square}
-            style={style}
-            >
-                {children}
-            </Paper1>
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <Paper1
+                            className={classes.root}
+                            component={component}
+                            elevation={elevation}
+                            square={square}
+                            style={style}
+                        >
+                            {children}
+                        </Paper1>
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 Paper.defaultProps = {
+    classes: {},
     component: 'div',
     elevation: 2,
     square: false

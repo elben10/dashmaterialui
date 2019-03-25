@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CardMedia1 from '@material-ui/core/CardMedia'
+import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,19 +13,27 @@ import CardMedia1 from '@material-ui/core/CardMedia'
 export default class CardMedia extends Component {
     render() {
         const { classes, component, image, src, style } = this.props;
+        const Styled = createStyled({ root: classes })
         return (
-            <CardMedia1
-                classes={classes}
-                component={component}
-                image={image}
-                src={src}
-                style={style}
-            />
+            <Styled>
+                {
+                    ({ classes }) => (
+                        <CardMedia1
+                        className={classes.root}
+                        component={component}
+                        image={image}
+                        src={src}
+                        style={style}
+                        />
+                    )
+                }
+            </Styled>
         );
     }
 }
 
 CardMedia.defaultProps = {
+    classes: {},
     component: 'div',
 };
 

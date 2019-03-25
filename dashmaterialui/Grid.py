@@ -18,7 +18,8 @@ Keyword arguments:
 - classes (dict; optional): Override or extend the styles applied to the component. See CSS API below for more details.
 - component (optional): The component used for the root node. Either a string to use a DOM element or a component.
 - container (boolean; optional): If true, the component will have the flex container behavior. You should be wrapping items with a container.
-- direction (optional): Defines the flex-direction style property. It is applied for all screen sizes.
+- direction (a value equal to: 'row', 'row-reverse', 'column', 'column-reverse'; optional): Defines the flex-direction style property. It is applied for all screen sizes.
+- id (string; optional)
 - item (boolean; optional): If true, the component will have the flex item behavior. You should be wrapping items with a container.
 - justify (a value equal to: 'flex-start', 'center', 'flex-end', 'space-between', 'space-around', 'space-evenly'; optional): Defines the justify-content style property. It is applied for all screen sizes.
 - lg (a value equal to: false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12; optional): Defines the number of grids the component is going to use. It's applied for the lg breakpoint and wider screens if not overridden.
@@ -31,12 +32,12 @@ Keyword arguments:
 - xs (a value equal to: false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12; optional): Defines the number of grids the component is going to use. It's applied for all the screen sizes with the lowest priority.
 - zeroMinWidth (boolean; optional): If true, it sets min-width: 0 on the item. Refer to the limitations section of the documentation to better understand the use case."""
     @_explicitize_args
-    def __init__(self, children=None, alignContent=Component.UNDEFINED, alignItems=Component.UNDEFINED, classes=Component.UNDEFINED, component=Component.UNDEFINED, container=Component.UNDEFINED, direction=Component.UNDEFINED, item=Component.UNDEFINED, justify=Component.UNDEFINED, lg=Component.UNDEFINED, md=Component.UNDEFINED, sm=Component.UNDEFINED, spacing=Component.UNDEFINED, style=Component.UNDEFINED, wrap=Component.UNDEFINED, xl=Component.UNDEFINED, xs=Component.UNDEFINED, zeroMinWidth=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'alignContent', 'alignItems', 'classes', 'component', 'container', 'direction', 'item', 'justify', 'lg', 'md', 'sm', 'spacing', 'style', 'wrap', 'xl', 'xs', 'zeroMinWidth']
+    def __init__(self, children=None, alignContent=Component.UNDEFINED, alignItems=Component.UNDEFINED, classes=Component.UNDEFINED, component=Component.UNDEFINED, container=Component.UNDEFINED, direction=Component.UNDEFINED, id=Component.UNDEFINED, item=Component.UNDEFINED, justify=Component.UNDEFINED, lg=Component.UNDEFINED, md=Component.UNDEFINED, sm=Component.UNDEFINED, spacing=Component.UNDEFINED, style=Component.UNDEFINED, wrap=Component.UNDEFINED, xl=Component.UNDEFINED, xs=Component.UNDEFINED, zeroMinWidth=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'alignContent', 'alignItems', 'classes', 'component', 'container', 'direction', 'id', 'item', 'justify', 'lg', 'md', 'sm', 'spacing', 'style', 'wrap', 'xl', 'xs', 'zeroMinWidth']
         self._type = 'Grid'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'alignContent', 'alignItems', 'classes', 'component', 'container', 'direction', 'item', 'justify', 'lg', 'md', 'sm', 'spacing', 'style', 'wrap', 'xl', 'xs', 'zeroMinWidth']
+        self.available_properties = ['children', 'alignContent', 'alignItems', 'classes', 'component', 'container', 'direction', 'id', 'item', 'justify', 'lg', 'md', 'sm', 'spacing', 'style', 'wrap', 'xl', 'xs', 'zeroMinWidth']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')
