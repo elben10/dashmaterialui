@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class CardMedia extends Component {
     render() {
-        const { classes, component, image, src, style } = this.props;
+        const { classes, component, id, image, src, style } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -21,6 +21,7 @@ export default class CardMedia extends Component {
                         <CardMedia1
                         className={classes.root}
                         component={component}
+                        id={id}
                         image={image}
                         src={src}
                         style={style}
@@ -46,6 +47,10 @@ CardMedia.propTypes = {
      * The component used for the root node. Either a string to use a DOM element or a component.
      */
     component: PropTypes.Component,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * Image to be displayed as a background image. Either image or src prop must be specified. Note that caller must specify height otherwise the image will not be visible.
      */

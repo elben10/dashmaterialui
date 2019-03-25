@@ -95,6 +95,9 @@ Grid.propTypes = {
      *  Defines the flex-direction style property. It is applied for all screen sizes.
      */
     direction: PropTypes.oneOf(['row', 'row-reverse', 'column', 'column-reverse']),
+    /**
+     * The components id
+     */
     id: PropTypes.string,
     /**
      * If true, the component will have the flex item behavior. You should be wrapping items with a container.

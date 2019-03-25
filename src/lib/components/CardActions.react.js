@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class CardActions extends Component {
     render() {
-        const { children, classes, disableActionSpacing, style } = this.props;
+        const { children, classes, disableActionSpacing, id, style } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -21,6 +21,7 @@ export default class CardActions extends Component {
                         <CardActions1
                             className={classes.root}
                             disableActionSpacing={disableActionSpacing}
+                            id={id}
                             style={style}
                         >
                             {children}
@@ -50,6 +51,10 @@ CardActions.propTypes = {
      * If true, the card actions do not have additional margin.
      */
     disableActionSpacing: PropTypes.bool,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * Add style object
      */

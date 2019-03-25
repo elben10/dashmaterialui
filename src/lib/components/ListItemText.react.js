@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class ListItemText extends Component {
     render() {
-        const { children, classes, disableTypography, inset, primary, primaryTypographyProps, secondary, secondaryTypographyProps, style} = this.props;
+        const { children, classes, disableTypography, id, inset, primary, primaryTypographyProps, secondary, secondaryTypographyProps, style} = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -21,6 +21,7 @@ export default class ListItemText extends Component {
                         <ListItemText1
                             className={classes.root}
                             disableTypography={disableTypography}
+                            id={id}
                             inset={inset}
                             primary={primary}
                             primaryTypographyProps={primaryTypographyProps}
@@ -56,6 +57,10 @@ ListItemText.propTypes = {
      * If true, the children won't be wrapped by a Typography component. This can be useful to render an alternative Typography variant by wrapping the children (or primary) text, and optional secondary text with the Typography component.
      */
     disableTypography: PropTypes.bool,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * If true, the children will be indented. This should be used if there is no left avatar or left icon.
      */

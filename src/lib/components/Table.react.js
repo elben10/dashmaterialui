@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class Table extends Component {
     render() {
-        const { children, classes, component, padding, style } = this.props;
+        const { children, classes, component, id, padding, style } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -21,6 +21,7 @@ export default class Table extends Component {
                         <Table1
                             className={classes.root}
                             component={component}
+                            id={id}
                             padding={padding}
                             style={style}
                         >
@@ -52,6 +53,10 @@ Table.propTypes = {
      * The component used for the root node. Either a string to use a DOM element or a component.
      */
     component: PropTypes.Component,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * Allows TableCells to inherit padding of the Table.
      */

@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class TableRow extends Component {
     render() {
-        const { children, classes, component, hover, selected, style } = this.props;
+        const { children, classes, component, hover, id, selected, style } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -22,6 +22,7 @@ export default class TableRow extends Component {
                             className={classes.root}
                             component={component}
                             hover={hover}
+                            id={id}
                             selected={selected}
                             style={style}
                         >
@@ -59,6 +60,10 @@ TableRow.propTypes = {
      * If true, the table row will shade on hover.
      */
     hover: PropTypes.bool,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * If true, the table row will have the selected shading.
      */

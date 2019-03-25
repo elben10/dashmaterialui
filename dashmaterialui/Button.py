@@ -21,17 +21,18 @@ Keyword arguments:
 - disableRipple (boolean; optional): If true, the ripple effect will be disabled.
 - fullWidth (boolean; optional): If true, the button will take up the full width of its container.
 - href (string; optional): The URL to link to when the button is clicked. If defined, an a element will be used as the root node.
+- id (string; optional): The components id
 - mini (boolean; optional): If true, and variant is 'fab', will use mini floating action button styling.
 - size (a value equal to: 'small', 'medium', 'large'; optional): The size of the button. small is equivalent to the dense button styling.
 - style (dict; optional): Add style object
 - variant (a value equal to: 'text', 'outlined', 'contained', 'fab', 'extendedFab', 'flat', 'raised'; optional): The variant to use. WARNING: flat and raised are deprecated. Instead use text and contained respectively. fab and extendedFab are deprecated. Instead use <Fab> and <Fab variant="extended">"""
     @_explicitize_args
-    def __init__(self, children=None, classes=Component.UNDEFINED, color=Component.UNDEFINED, component=Component.UNDEFINED, disabled=Component.UNDEFINED, disableFocusRipple=Component.UNDEFINED, disableRipple=Component.UNDEFINED, fullWidth=Component.UNDEFINED, href=Component.UNDEFINED, mini=Component.UNDEFINED, size=Component.UNDEFINED, style=Component.UNDEFINED, variant=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'classes', 'color', 'component', 'disabled', 'disableFocusRipple', 'disableRipple', 'fullWidth', 'href', 'mini', 'size', 'style', 'variant']
+    def __init__(self, children=None, classes=Component.UNDEFINED, color=Component.UNDEFINED, component=Component.UNDEFINED, disabled=Component.UNDEFINED, disableFocusRipple=Component.UNDEFINED, disableRipple=Component.UNDEFINED, fullWidth=Component.UNDEFINED, href=Component.UNDEFINED, id=Component.UNDEFINED, mini=Component.UNDEFINED, size=Component.UNDEFINED, style=Component.UNDEFINED, variant=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'classes', 'color', 'component', 'disabled', 'disableFocusRipple', 'disableRipple', 'fullWidth', 'href', 'id', 'mini', 'size', 'style', 'variant']
         self._type = 'Button'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'classes', 'color', 'component', 'disabled', 'disableFocusRipple', 'disableRipple', 'fullWidth', 'href', 'mini', 'size', 'style', 'variant']
+        self.available_properties = ['children', 'classes', 'color', 'component', 'disabled', 'disableFocusRipple', 'disableRipple', 'fullWidth', 'href', 'id', 'mini', 'size', 'style', 'variant']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

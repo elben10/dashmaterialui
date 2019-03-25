@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class GridList extends Component {
     render() {
-        const { cellHeight, children, classes, cols, component, spacing, style } = this.props;
+        const { cellHeight, children, classes, cols, component, id, spacing, style } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -23,6 +23,7 @@ export default class GridList extends Component {
                             className={classes.root}
                             cols={cols}
                             component={component}
+                            id={id}
                             spacing={spacing}
                             style={style}
                         >
@@ -64,6 +65,10 @@ GridList.propTypes = {
      * The component used for the root node. Either a string to use a DOM element or a component.
      */
     component: PropTypes.Component,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * Number of px for the spacing between tiles.
      */

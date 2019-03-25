@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class Card extends Component {
     render() {
-        const { children, classes, raised, style } = this.props;
+        const { children, classes, id, raised, style } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -20,6 +20,7 @@ export default class Card extends Component {
                     ({ classes }) => (
                         <Card1
                             className={classes.root}
+                            id={id}
                             raised={raised}
                             style={style}
                         >
@@ -46,6 +47,10 @@ Card.propTypes = {
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
     classes: PropTypes.object,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * If true, the card will use raised styling.
      */

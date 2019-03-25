@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class Avatar extends Component {
     render() {
-        const { alt, children, classes, component, imgProps, sizes, src, srcSet, style } = this.props;
+        const { alt, children, classes, component, id, imgProps, sizes, src, srcSet, style } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -22,6 +22,7 @@ export default class Avatar extends Component {
                             alt={alt}
                             className={classes.root}
                             component={component}
+                            id={id}
                             imgProps={imgProps}
                             sizes={sizes}
                             src={src}
@@ -60,6 +61,10 @@ Avatar.propTypes = {
      * The component used for the root node. Either a string to use a DOM element or a component.
      */
     component: PropTypes.Component,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      *  Attributes applied to the img element if the component is used to display an image.
      */

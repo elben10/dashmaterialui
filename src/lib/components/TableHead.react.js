@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class TableHead extends Component {
     render() {
-        const { children, classes, component, style } = this.props;
+        const { children, classes, component, id, style } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -21,6 +21,7 @@ export default class TableHead extends Component {
                         <TableHead1
                             className={classes.root}
                             component={component}
+                            id={id}
                             style={style}
                         >
                             {children}
@@ -51,6 +52,10 @@ TableHead.propTypes = {
      * The component used for the root node. Either a string to use a DOM element or a component.
      */
     component: PropTypes.Component,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * Add style object
      */

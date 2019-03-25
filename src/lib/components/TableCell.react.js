@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class TableCell extends Component {
     render() {
-        const { align, children, classes, component, padding, scope, sortDirection, style, variant } = this.props;
+        const { align, children, classes, component, id, padding, scope, sortDirection, style, variant } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -22,6 +22,7 @@ export default class TableCell extends Component {
                             align={align}
                             className={classes.root}
                             component={component}
+                            id={id}
                             padding={padding}
                             scope={scope}
                             sortDirection={sortDirection}
@@ -59,6 +60,10 @@ TableCell.propTypes = {
      * The component used for the root node. Either a string to use a DOM element or a component.
      */
     component: PropTypes.Component,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * Sets the padding applied to the cell. By default, the Table parent component set the value.
      */

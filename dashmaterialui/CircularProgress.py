@@ -15,17 +15,18 @@ Keyword arguments:
 - classes (dict; optional): Override or extend the styles applied to the component. See CSS API below for more details.
 - color (a value equal to: 'primary', 'secondary', 'inherit'; optional): The color of the component. It supports those theme colors that make sense for this component.
 - disableShrink (boolean; optional): If true, the shrink animation is disabled. This only works if variant is indeterminate.
+- id (string; optional): The components id
 - size (number; optional): The size of the circle.
 - style (dict; optional): Add style object
 - value (number; optional): The value of the progress indicator for the determinate and static variants. Value between 0 and 100.
 - variant (a value equal to: 'determinate', 'indeterminate', 'static'; optional): The variant to use. Use indeterminate when there is no progress value."""
     @_explicitize_args
-    def __init__(self, classes=Component.UNDEFINED, color=Component.UNDEFINED, disableShrink=Component.UNDEFINED, size=Component.UNDEFINED, style=Component.UNDEFINED, value=Component.UNDEFINED, variant=Component.UNDEFINED, thickness=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['classes', 'color', 'disableShrink', 'size', 'style', 'value', 'variant']
+    def __init__(self, classes=Component.UNDEFINED, color=Component.UNDEFINED, disableShrink=Component.UNDEFINED, id=Component.UNDEFINED, size=Component.UNDEFINED, style=Component.UNDEFINED, value=Component.UNDEFINED, variant=Component.UNDEFINED, thickness=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['classes', 'color', 'disableShrink', 'id', 'size', 'style', 'value', 'variant']
         self._type = 'CircularProgress'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['classes', 'color', 'disableShrink', 'size', 'style', 'value', 'variant']
+        self.available_properties = ['classes', 'color', 'disableShrink', 'id', 'size', 'style', 'value', 'variant']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

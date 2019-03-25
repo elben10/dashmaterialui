@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class Button extends Component {
     render() {
-        const { children, classes, color, component, disabled, disableFocusRipple, disableRipple, fullWidth, href, mini, size, style, variant } = this.props;
+        const { children, classes, color, component, disabled, disableFocusRipple, disableRipple, fullWidth, href, id, mini, size, style, variant } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -27,6 +27,7 @@ export default class Button extends Component {
                             disableRipple={disableRipple}
                             fullWidth={fullWidth}
                             href={href}
+                            id={id}
                             mini={mini}
                             size={size}
                             style={style}
@@ -90,6 +91,10 @@ Button.propTypes = {
      * The URL to link to when the button is clicked. If defined, an a element will be used as the root node.
      */
     href: PropTypes.string,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * If true, and variant is 'fab', will use mini floating action button styling.
      */

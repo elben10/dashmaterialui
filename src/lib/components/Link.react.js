@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class Link extends Component {
     render() {
-        const { block, children, classes, color, component, href, style, TypographyClasses, underline, variant } = this.props;
+        const { block, children, classes, color, component, href, id, style, TypographyClasses, underline, variant } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -24,6 +24,7 @@ export default class Link extends Component {
                             className={classes.root}
                             component={component}
                             href={href}
+                            id={id}
                             style={style}
                             TypographyClasses={TypographyClasses}
                             underline={underline}
@@ -72,6 +73,10 @@ Link.propTypes = {
      * The url to refer to
      */
     href: PropTypes.string,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * Add style object
      */

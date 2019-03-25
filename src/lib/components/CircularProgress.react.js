@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class CircularProgress extends Component {
     render() {
-        const { classes, color, disableShrink, size, style, thickness, value, variant } = this.props;
+        const { classes, color, disableShrink, id, size, style, thickness, value, variant } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -22,6 +22,7 @@ export default class CircularProgress extends Component {
                             className={classes.root}
                             color={color}
                             disableShrink={disableShrink}
+                            id={id}
                             size={size}
                             style={style}
                             thickness={thickness}
@@ -58,6 +59,10 @@ CircularProgress.propTypes = {
      * If true, the shrink animation is disabled. This only works if variant is indeterminate.
      */
     disableShrink: PropTypes.bool,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * The size of the circle.
      */

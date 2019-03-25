@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class ListItem extends Component {
     render() {
-        const { alignItems, button, children, classes, component, ContainerComponent, ContainerProps, dense, disabled, disableGutters, divider, selected, style } = this.props;
+        const { alignItems, button, children, classes, component, ContainerComponent, ContainerProps, dense, disabled, disableGutters, divider, id, selected, style } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -29,6 +29,7 @@ export default class ListItem extends Component {
                             disabled={disabled}
                             disableGutters={disableGutters}
                             divider={divider}
+                            id={id}
                             selected={selected}
                             style={style}
                         >
@@ -98,6 +99,10 @@ ListItem.propTypes = {
      * If true, a 1px light border is added to the bottom of the list item.
      */
     divider: PropTypes.bool,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * Use to apply selected styling.
      */

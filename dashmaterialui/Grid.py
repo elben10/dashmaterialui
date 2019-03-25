@@ -19,7 +19,7 @@ Keyword arguments:
 - component (optional): The component used for the root node. Either a string to use a DOM element or a component.
 - container (boolean; optional): If true, the component will have the flex container behavior. You should be wrapping items with a container.
 - direction (a value equal to: 'row', 'row-reverse', 'column', 'column-reverse'; optional): Defines the flex-direction style property. It is applied for all screen sizes.
-- id (string; optional)
+- id (string; optional): The components id
 - item (boolean; optional): If true, the component will have the flex item behavior. You should be wrapping items with a container.
 - justify (a value equal to: 'flex-start', 'center', 'flex-end', 'space-between', 'space-around', 'space-evenly'; optional): Defines the justify-content style property. It is applied for all screen sizes.
 - lg (a value equal to: false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12; optional): Defines the number of grids the component is going to use. It's applied for the lg breakpoint and wider screens if not overridden.

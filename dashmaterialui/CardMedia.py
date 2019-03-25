@@ -14,16 +14,17 @@ which is editable by the user.
 Keyword arguments:
 - classes (dict; optional): Override or extend the styles applied to the component. See CSS API below for more details.
 - component (optional): The component used for the root node. Either a string to use a DOM element or a component.
+- id (string; optional): The components id
 - image (string; optional): Image to be displayed as a background image. Either image or src prop must be specified. Note that caller must specify height otherwise the image will not be visible.
 - src (string; optional): An alias for image property. Available only with media components. Media components: video, audio, picture, iframe, img.
 - style (dict; optional): Add style object"""
     @_explicitize_args
-    def __init__(self, classes=Component.UNDEFINED, component=Component.UNDEFINED, image=Component.UNDEFINED, src=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['classes', 'component', 'image', 'src', 'style']
+    def __init__(self, classes=Component.UNDEFINED, component=Component.UNDEFINED, id=Component.UNDEFINED, image=Component.UNDEFINED, src=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['classes', 'component', 'id', 'image', 'src', 'style']
         self._type = 'CardMedia'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['classes', 'component', 'image', 'src', 'style']
+        self.available_properties = ['classes', 'component', 'id', 'image', 'src', 'style']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class Paper extends Component {
     render() {
-        const { children, classes, component, elevation, square, style } = this.props;
+        const { children, classes, component, elevation, id, square, style } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -22,6 +22,7 @@ export default class Paper extends Component {
                             className={classes.root}
                             component={component}
                             elevation={elevation}
+                            id={id}
                             square={square}
                             style={style}
                         >
@@ -58,6 +59,10 @@ Paper.propTypes = {
      *  Shadow depth, corresponds to dp in the spec. It's accepting values between 0 and 24 inclusive.
      */
     elevation: PropTypes.number,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * If true, rounded corners are disabled.
      */

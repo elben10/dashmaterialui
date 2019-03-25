@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class AppBar extends Component {
     render() {
-        const { children, classes, color, position, style } = this.props;
+        const { children, classes, color, id, position, style } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -21,6 +21,7 @@ export default class AppBar extends Component {
                         <AppBar1
                             className={classes.root}
                             color={color}
+                            id={id}
                             position={position}
                             style={style}
                         >
@@ -52,6 +53,10 @@ AppBar.propTypes = {
      * The color of the component. It supports those theme colors that make sense for this component.
      */
     color: PropTypes.oneOf(['inherit', 'primary', 'secondary', 'default']),
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * The positioning type. The behavior of the different options is described in the MDN web docs. Note: sticky is not universally supported and will fall back to static when unavailable.
      */

@@ -17,14 +17,15 @@ Keyword arguments:
 - color (a value equal to: 'default', 'inherit', 'primary', 'secondary'; optional): The color of the component. It supports those theme colors that make sense for this component.
 - disabled (boolean; optional): If true, the button will be disabled.
 - disableRipple (boolean; optional): If true, the ripple will be disabled.
+- id (string; optional): The components id
 - style (dict; optional): Add style object"""
     @_explicitize_args
-    def __init__(self, children=None, classes=Component.UNDEFINED, color=Component.UNDEFINED, disabled=Component.UNDEFINED, disableRipple=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'classes', 'color', 'disabled', 'disableRipple', 'style']
+    def __init__(self, children=None, classes=Component.UNDEFINED, color=Component.UNDEFINED, disabled=Component.UNDEFINED, disableRipple=Component.UNDEFINED, id=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'classes', 'color', 'disabled', 'disableRipple', 'id', 'style']
         self._type = 'IconButton'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'classes', 'color', 'disabled', 'disableRipple', 'style']
+        self.available_properties = ['children', 'classes', 'color', 'disabled', 'disableRipple', 'id', 'style']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

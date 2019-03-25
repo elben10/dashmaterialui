@@ -17,15 +17,16 @@ Keyword arguments:
 - component (optional): The component used for the root node. Either a string to use a DOM element or a component.
 - dense (boolean; optional): If true, compact vertical padding designed for keyboard and mouse input will be used for the list and list items. The property is available to descendant components as the dense context.
 - disablePadding (boolean; optional): If true, vertical padding will be removed from the list.
+- id (string; optional): The components id
 - style (dict; optional): Add style object
 - subheader (a list of or a singular dash component, string or number; optional): The content of the subheader, normally ListSubheader."""
     @_explicitize_args
-    def __init__(self, children=None, classes=Component.UNDEFINED, component=Component.UNDEFINED, dense=Component.UNDEFINED, disablePadding=Component.UNDEFINED, style=Component.UNDEFINED, subheader=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'classes', 'component', 'dense', 'disablePadding', 'style', 'subheader']
+    def __init__(self, children=None, classes=Component.UNDEFINED, component=Component.UNDEFINED, dense=Component.UNDEFINED, disablePadding=Component.UNDEFINED, id=Component.UNDEFINED, style=Component.UNDEFINED, subheader=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'classes', 'component', 'dense', 'disablePadding', 'id', 'style', 'subheader']
         self._type = 'List'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'classes', 'component', 'dense', 'disablePadding', 'style', 'subheader']
+        self.available_properties = ['children', 'classes', 'component', 'dense', 'disablePadding', 'id', 'style', 'subheader']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

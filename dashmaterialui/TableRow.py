@@ -16,15 +16,16 @@ Keyword arguments:
 - classes (dict; optional): Override or extend the styles applied to the component. See CSS API below for more details.
 - component (optional): The component used for the root node. Either a string to use a DOM element or a component.
 - hover (boolean; optional): If true, the table row will shade on hover.
+- id (string; optional): The components id
 - selected (boolean; optional): If true, the table row will have the selected shading.
 - style (dict; optional): Add style object"""
     @_explicitize_args
-    def __init__(self, children=None, classes=Component.UNDEFINED, component=Component.UNDEFINED, hover=Component.UNDEFINED, selected=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'classes', 'component', 'hover', 'selected', 'style']
+    def __init__(self, children=None, classes=Component.UNDEFINED, component=Component.UNDEFINED, hover=Component.UNDEFINED, id=Component.UNDEFINED, selected=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'classes', 'component', 'hover', 'id', 'selected', 'style']
         self._type = 'TableRow'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'classes', 'component', 'hover', 'selected', 'style']
+        self.available_properties = ['children', 'classes', 'component', 'hover', 'id', 'selected', 'style']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

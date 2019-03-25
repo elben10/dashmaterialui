@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class List extends Component {
     render() {
-        const { children, classes, component, dense, disablePadding, style, subheader } = this.props;
+        const { children, classes, component, dense, disablePadding, id, style, subheader } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -23,6 +23,7 @@ export default class List extends Component {
                             component={component}
                             dense={dense}
                             disablePadding={disablePadding}
+                            id={id}
                             style={style}
                             subheader={subheader}
                         >
@@ -63,6 +64,10 @@ List.propTypes = {
      * If true, vertical padding will be removed from the list.
      */
     disablePadding: PropTypes.bool,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * Add style object
      */

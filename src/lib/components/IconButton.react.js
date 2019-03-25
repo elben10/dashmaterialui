@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class IconButton extends Component {
     render() {
-        const { children, classes, color, disabled, disableRipple, style } = this.props;
+        const { children, classes, color, disabled, disableRipple, id, style } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -23,6 +23,7 @@ export default class IconButton extends Component {
                             color={color}
                             disabled={disabled}
                             disableRipple={disableRipple}
+                            id={id}
                             style={style}
                         >
                             {children}
@@ -61,6 +62,10 @@ IconButton.propTypes = {
      * If true, the ripple will be disabled.
      */
     disableRipple: PropTypes.bool,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * Add style object
      */

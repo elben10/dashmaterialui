@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class Icon extends Component {
     render() {
-        const { children, classes, color, component, fontSize, style } = this.props;
+        const { children, classes, color, component, fontSize, id, style } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -23,6 +23,7 @@ export default class Icon extends Component {
                             className={classes.root}
                             component={component}
                             fontSize={fontSize}
+                            id={id}
                             style={style}
                         >
                             {children}
@@ -62,6 +63,10 @@ Icon.propTypes = {
      * The fontSize applied to the icon. Defaults to 24px, but can be configure to inherit font size.
      */
     fontSize: PropTypes.oneOf(['inherit', 'default', 'small', 'large']),
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * Add style object
      */

@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class Badge extends Component {
     render() {
-        const { badgeContent, children, classes, color, component, invisible, max, showZero, style, variant } = this.props;
+        const { badgeContent, children, classes, color, component, id, invisible, max, showZero, style, variant } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -23,6 +23,7 @@ export default class Badge extends Component {
                             color={color}
                             className={classes.root}
                             component={component}
+                            id={id}
                             invisible={invisible}
                             max={max}
                             showZero={showZero}
@@ -68,6 +69,10 @@ Badge.propTypes = {
      * The component used for the root node. Either a string to use a DOM element or a component.
      */
     component: PropTypes.Component,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * If true, the badge will be invisible.
      */

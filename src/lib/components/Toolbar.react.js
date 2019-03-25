@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class Toolbar extends Component {
     render() {
-        const { children, classes, disableGutters, style, variant } = this.props;
+        const { children, classes, disableGutters, id, style, variant } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -21,6 +21,7 @@ export default class Toolbar extends Component {
                         <Toolbar1
                             className={classes.root}
                             disableGutters={disableGutters}
+                            id={id}
                             style={style}
                             variant={variant}
                         >
@@ -52,6 +53,10 @@ Toolbar.propTypes = {
      * If true, disables gutter padding.
      */
     disableGutters: PropTypes.bool,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * Add style object
      */

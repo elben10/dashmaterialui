@@ -15,14 +15,15 @@ Keyword arguments:
 - children (a list of or a singular dash component, string or number; optional): The content of the component, normally TableRow.
 - classes (dict; optional): Override or extend the styles applied to the component. See CSS API below for more details.
 - component (optional): The component used for the root node. Either a string to use a DOM element or a component.
+- id (string; optional): The components id
 - style (dict; optional): Add style object"""
     @_explicitize_args
-    def __init__(self, children=None, classes=Component.UNDEFINED, component=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'classes', 'component', 'style']
+    def __init__(self, children=None, classes=Component.UNDEFINED, component=Component.UNDEFINED, id=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'classes', 'component', 'id', 'style']
         self._type = 'TableFooter'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'classes', 'component', 'style']
+        self.available_properties = ['children', 'classes', 'component', 'id', 'style']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

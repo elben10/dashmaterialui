@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class Typography extends Component {
     render() {
-        const { align, children, classes, color, component, gutterBottom, headlineMapping, inline, internalDeprecatedVariant, noWrap, paragraph, style, variant } = this.props;
+        const { align, children, classes, color, component, gutterBottom, headlineMapping, id, inline, internalDeprecatedVariant, noWrap, paragraph, style, variant } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -25,6 +25,7 @@ export default class Typography extends Component {
                             component={component}
                             gutterBottom={gutterBottom}
                             headlineMapping={headlineMapping}
+                            id={id}
                             inline={inline}
                             internalDeprecatedVariant={internalDeprecatedVariant}
                             noWrap={noWrap}
@@ -81,6 +82,10 @@ Typography.propTypes = {
      * We are empirically mapping the variant property to a range of different DOM element types. For instance, subtitle1 to <h6>. If you wish to change that mapping, you can provide your own. Alternatively, you can use the component property. The default mapping is the following:
      */
     headlineMapping: PropTypes.object,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * Controls whether the Typography is inline or not.
      */

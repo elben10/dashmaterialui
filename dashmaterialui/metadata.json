@@ -51,6 +51,13 @@
           "computed": false
         }
       },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
+      },
       "position": {
         "type": {
           "name": "enum",
@@ -134,6 +141,13 @@
           "value": "'div'",
           "computed": false
         }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "imgProps": {
         "type": {
@@ -242,6 +256,13 @@
           "value": "'span'",
           "computed": false
         }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "invisible": {
         "type": {
@@ -413,6 +434,13 @@
         "required": false,
         "description": "The URL to link to when the button is clicked. If defined, an a element will be used as the root node."
       },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
+      },
       "mini": {
         "type": {
           "name": "bool"
@@ -522,6 +550,13 @@
           "computed": false
         }
       },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
+      },
       "raised": {
         "type": {
           "name": "bool"
@@ -565,6 +600,13 @@
           "computed": false
         }
       },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
+      },
       "style": {
         "type": {
           "name": "object"
@@ -607,6 +649,13 @@
           "value": "false",
           "computed": false
         }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "style": {
         "type": {
@@ -652,6 +701,13 @@
           "computed": false
         }
       },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
+      },
       "style": {
         "type": {
           "name": "object"
@@ -688,6 +744,13 @@
           "value": "'div'",
           "computed": false
         }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "image": {
         "type": {
@@ -763,6 +826,13 @@
           "value": "false",
           "computed": false
         }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "size": {
         "type": {
@@ -865,6 +935,13 @@
           "value": "'hr'",
           "computed": false
         }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "inset": {
         "type": {
@@ -1068,7 +1145,7 @@
           "name": "string"
         },
         "required": false,
-        "description": ""
+        "description": "The components id"
       },
       "item": {
         "type": {
@@ -1632,6 +1709,13 @@
           "computed": false
         }
       },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
+      },
       "spacing": {
         "type": {
           "name": "number"
@@ -1753,6 +1837,13 @@
           "computed": false
         }
       },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
+      },
       "style": {
         "type": {
           "name": "object"
@@ -1831,6 +1922,13 @@
         },
         "required": false,
         "description": "If true, the ripple will be disabled."
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "style": {
         "type": {
@@ -1930,6 +2028,13 @@
         },
         "required": false,
         "description": "The url to refer to"
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "style": {
         "type": {
@@ -2039,6 +2144,13 @@
           "value": "false",
           "computed": false
         }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "style": {
         "type": {
@@ -2182,6 +2294,13 @@
           "computed": false
         }
       },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
+      },
       "selected": {
         "type": {
           "name": "bool"
@@ -2225,6 +2344,13 @@
           "computed": false
         }
       },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
+      },
       "style": {
         "type": {
           "name": "object"
@@ -2267,6 +2393,13 @@
           "value": "false",
           "computed": false
         }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "inset": {
         "type": {
@@ -2362,6 +2495,13 @@
           "computed": false
         }
       },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
+      },
       "square": {
         "type": {
           "name": "bool"
@@ -2416,6 +2556,13 @@
           "value": "'table'",
           "computed": false
         }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "padding": {
         "type": {
@@ -2489,6 +2636,13 @@
           "value": "'tbody'",
           "computed": false
         }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "padding": {
         "type": {
@@ -2591,6 +2745,13 @@
         },
         "required": false,
         "description": "The component used for the root node. Either a string to use a DOM element or a component."
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "padding": {
         "type": {
@@ -2710,6 +2871,13 @@
           "computed": false
         }
       },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
+      },
       "style": {
         "type": {
           "name": "object"
@@ -2753,6 +2921,13 @@
           "value": "'thead'",
           "computed": false
         }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "style": {
         "type": {
@@ -2816,6 +2991,13 @@
           "computed": false
         }
       },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
+      },
       "selected": {
         "type": {
           "name": "bool"
@@ -2869,6 +3051,13 @@
           "value": "false",
           "computed": false
         }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "style": {
         "type": {
@@ -3026,6 +3215,13 @@
           "value": "{ h1: 'h1', h2: 'h2', h3: 'h3', h4: 'h4', h5: 'h5', h6: 'h6', subtitle1: 'h6', subtitle2: 'h6', body1: 'p', body2: 'p' }",
           "computed": false
         }
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
       },
       "inline": {
         "type": {

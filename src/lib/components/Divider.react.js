@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class Divider extends Component {
     render() {
-        const { absolute, classes, component, inset, light, style, variant } = this.props;
+        const { absolute, classes, component, id, inset, light, style, variant } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -22,6 +22,7 @@ export default class Divider extends Component {
                             absolute={absolute}
                             className={classes.root}
                             component={component}
+                            id={id}
                             inset={inset}
                             light={light}
                             style={style}
@@ -55,6 +56,10 @@ Divider.propTypes = {
      * The component used for the root node. Either a string to use a DOM element or a component.
      */
     component: PropTypes.component,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * If true, the divider will be indented. WARNING: inset is deprecated. Instead use variant="inset".
      */

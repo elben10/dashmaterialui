@@ -12,7 +12,7 @@ import createStyled from './utils/Styled';
  */
 export default class ListItemAvatar extends Component {
     render() {
-        const { children, classes, style } = this.props;
+        const { children, classes, id, style } = this.props;
         const Styled = createStyled({ root: classes })
         return (
             <Styled>
@@ -20,6 +20,7 @@ export default class ListItemAvatar extends Component {
                     ({ classes }) => (
                         <ListItemAvatar1
                             className={classes.root}
+                            id={id}
                             style={style}
                         >
                             {children}
@@ -44,6 +45,10 @@ ListItemAvatar.propTypes = {
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
     classes: PropTypes.object,
+    /**
+     * The components id
+     */
+    id: PropTypes.string,
     /**
      * Add style object
      */
