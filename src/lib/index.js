@@ -8,6 +8,7 @@ import CardActions from './components/CardActions.react';
 import CardContent from './components/CardContent.react';
 import CardMedia from './components/CardMedia.react';
 import CircularProgress from './components/CircularProgress.react';
+import Divider from './components/Divider.react';
 import Button from './components/Button.react';
 import Grid from './components/Grid.react';
 import GridList from './components/GridList.react';
@@ -34,6 +35,7 @@ export {
     CardContent,
     CardMedia,
     CircularProgress,
+    Divider,
     Grid,
     GridList,
     Icon,

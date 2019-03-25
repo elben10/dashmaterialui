@@ -18,7 +18,7 @@ DashMaterialUI is a Dash component library.
 - [x] CardMedia
 - [ ] Checkbox
 - [ ] Chip
-- [ ] CircularProgress
+- [x] CircularProgress
 - [ ] ClickAwayListener
 - [ ] Collapse
 - [ ] CssBaseline
@@ -27,7 +27,7 @@ DashMaterialUI is a Dash component library.
 - [ ] DialogContent
 - [ ] DialogContentText
 - [ ] DialogTitle
-- [ ] Divider
+- [x] Divider
 - [ ] Drawer
 - [ ] ExpansionPanel
 - [ ] ExpansionPanelActions

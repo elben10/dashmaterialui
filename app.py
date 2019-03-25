@@ -51,6 +51,7 @@ app.layout = html.Div([
     dmui.CardContent("HEJSA"),
     dmui.CardMedia(src='test.png', component='img'),
     dmui.CircularProgress(),
+    dmui.Divider(),
     dmui.Grid("HEJSA"),
     dmui.GridList("HEJSA"),
     dmui.Icon("add_circle"),
