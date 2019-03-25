@@ -14,6 +14,7 @@ from .GridList import GridList
 from .Icon import Icon
 from .IconButton import IconButton
 from .Link import Link
+from .List import List
 from .Paper import Paper
 from .Table import Table
 from .TableBody import TableBody
@@ -41,6 +42,7 @@ __all__ = [
     "Icon",
     "IconButton",
     "Link",
+    "List",
     "Paper",
     "Table",
     "TableBody",

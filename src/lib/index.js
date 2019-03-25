@@ -15,6 +15,7 @@ import GridList from './components/GridList.react';
 import Icon from './components/Icon.react';
 import IconButton from './components/IconButton.react';
 import Link from './components/Link.react';
+import List from './components/List.react';
 import Paper from './components/Paper.react';
 import Table from './components/Table.react';
 import TableBody from './components/TableBody.react';
@@ -42,6 +43,7 @@ export {
     Icon,
     IconButton,
     Link,
+    List,
     Paper,
     Table,
     TableBody,
