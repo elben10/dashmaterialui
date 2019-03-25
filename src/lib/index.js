@@ -13,6 +13,7 @@ import Button from './components/Button.react';
 import Grid from './components/Grid.react';
 import GridList from './components/GridList.react';
 import Icon from './components/Icon.react';
+import IconButton from './components/IconButton.react';
 import Link from './components/Link.react';
 import Paper from './components/Paper.react';
 import Table from './components/Table.react';
@@ -39,6 +40,7 @@ export {
     Grid,
     GridList,
     Icon,
+    IconButton,
     Link,
     Paper,
     Table,

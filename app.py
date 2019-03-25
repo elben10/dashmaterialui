@@ -55,6 +55,7 @@ app.layout = html.Div([
     dmui.Grid("HEJSA"),
     dmui.GridList("HEJSA"),
     dmui.Icon("add_circle"),
+    dmui.IconButton(dmui.Icon('star_border')),
     dmui.Link("HEJSA"),
     dmui.Paper("HEJSA"),
     dmui.Table("HEJSA"),

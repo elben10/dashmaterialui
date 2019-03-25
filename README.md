@@ -48,7 +48,7 @@ DashMaterialUI is a Dash component library.
 - [ ] Grow
 - [ ] Hidden
 - [x] Icon
-- [ ] IconButton
+- [x] IconButton
 - [ ] Input
 - [ ] InputAdornment
 - [ ] InputBase
