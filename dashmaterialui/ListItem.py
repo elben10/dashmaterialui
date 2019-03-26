@@ -15,7 +15,7 @@ Keyword arguments:
 - children (a list of or a singular dash component, string or number; optional): The content of the component. If a ListItemSecondaryAction is used it must be the last child.
 - alignItems (a value equal to: 'flex-start', 'center'; optional): Defines the align-items style property.
 - button (boolean; optional): If true, the list item will be a button (using ButtonBase).
-- classes (dict; optional): Override or extend the styles applied to the component. See CSS API below for more details.
+- className (string; optional): Override or extend the styles applied to the component. See CSS API below for more details.
 - component (optional): The component used for the root node. Either a string to use a DOM element or a component. By default, it's a li when button is false and a div when button is true.
 - ContainerComponent (optional): The container component used when a ListItemSecondaryAction is the last child.
 - ContainerProps (dict; optional): Properties applied to the container component if used.
@@ -27,12 +27,12 @@ Keyword arguments:
 - selected (boolean; optional): Use to apply selected styling.
 - style (dict; optional): Add style object"""
     @_explicitize_args
-    def __init__(self, children=None, alignItems=Component.UNDEFINED, button=Component.UNDEFINED, classes=Component.UNDEFINED, component=Component.UNDEFINED, ContainerComponent=Component.UNDEFINED, ContainerProps=Component.UNDEFINED, dense=Component.UNDEFINED, disabled=Component.UNDEFINED, disableGutters=Component.UNDEFINED, divider=Component.UNDEFINED, id=Component.UNDEFINED, selected=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'alignItems', 'button', 'classes', 'component', 'ContainerComponent', 'ContainerProps', 'dense', 'disabled', 'disableGutters', 'divider', 'id', 'selected', 'style']
+    def __init__(self, children=None, alignItems=Component.UNDEFINED, button=Component.UNDEFINED, className=Component.UNDEFINED, component=Component.UNDEFINED, ContainerComponent=Component.UNDEFINED, ContainerProps=Component.UNDEFINED, dense=Component.UNDEFINED, disabled=Component.UNDEFINED, disableGutters=Component.UNDEFINED, divider=Component.UNDEFINED, id=Component.UNDEFINED, selected=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'alignItems', 'button', 'className', 'component', 'ContainerComponent', 'ContainerProps', 'dense', 'disabled', 'disableGutters', 'divider', 'id', 'selected', 'style']
         self._type = 'ListItem'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'alignItems', 'button', 'classes', 'component', 'ContainerComponent', 'ContainerProps', 'dense', 'disabled', 'disableGutters', 'divider', 'id', 'selected', 'style']
+        self.available_properties = ['children', 'alignItems', 'button', 'className', 'component', 'ContainerComponent', 'ContainerProps', 'dense', 'disabled', 'disableGutters', 'divider', 'id', 'selected', 'style']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

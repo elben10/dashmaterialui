@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CardMedia1 from '@material-ui/core/CardMedia'
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,29 +11,21 @@ import createStyled from './utils/Styled';
  */
 export default class CardMedia extends Component {
     render() {
-        const { classes, component, id, image, src, style } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { className, component, id, image, src, style } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <CardMedia1
-                        className={classes.root}
-                        component={component}
-                        id={id}
-                        image={image}
-                        src={src}
-                        style={style}
-                        />
-                    )
-                }
-            </Styled>
-        );
+            <CardMedia1
+                className={className}
+                component={component}
+                id={id}
+                image={image}
+                src={src}
+                style={style}
+            />
+        )
     }
 }
 
 CardMedia.defaultProps = {
-    classes: {},
     component: 'div',
 };
 
@@ -42,7 +33,7 @@ CardMedia.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The component used for the root node. Either a string to use a DOM element or a component.
      */

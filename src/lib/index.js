@@ -2,6 +2,7 @@
 import AppBar from './components/AppBar.react';
 import Avatar from './components/Avatar.react';
 import Badge from './components/Badge.react';
+import Button from './components/Button.react';
 import Card from './components/Card.react';
 import CardActionArea from './components/CardActionArea.react';
 import CardActions from './components/CardActions.react';
@@ -9,7 +10,6 @@ import CardContent from './components/CardContent.react';
 import CardMedia from './components/CardMedia.react';
 import CircularProgress from './components/CircularProgress.react';
 import Divider from './components/Divider.react';
-import Button from './components/Button.react';
 import Grid from './components/Grid.react';
 import GridList from './components/GridList.react';
 import Icon from './components/Icon.react';
@@ -28,6 +28,7 @@ import TableHead from './components/TableHead.react';
 import TableRow from './components/TableRow.react';
 import Toolbar from './components/Toolbar.react';
 import Typography from './components/Typography.react';
+
 
 export {
     AppBar,

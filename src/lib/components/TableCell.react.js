@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import TableCell1 from '@material-ui/core/TableCell'
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,35 +11,27 @@ import createStyled from './utils/Styled';
  */
 export default class TableCell extends Component {
     render() {
-        const { align, children, classes, component, id, padding, scope, sortDirection, style, variant } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { align, children, className, component, id, padding, scope, sortDirection, style, variant } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <TableCell1
-                            align={align}
-                            className={classes.root}
-                            component={component}
-                            id={id}
-                            padding={padding}
-                            scope={scope}
-                            sortDirection={sortDirection}
-                            style={style}
-                            variant={variant}
-                        >
-                            {children}
-                        </TableCell1>
-                    )
-                }
-            </Styled>
-        );
+            <TableCell1
+                align={align}
+                className={className}
+                component={component}
+                id={id}
+                padding={padding}
+                scope={scope}
+                sortDirection={sortDirection}
+                style={style}
+                variant={variant}
+            >
+                {children}
+            </TableCell1>
+        )
     }
 }
 
 TableCell.defaultProps = {
     align: 'inherit',
-    classes: {},
 };
 
 TableCell.propTypes = {
@@ -55,7 +46,7 @@ TableCell.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The component used for the root node. Either a string to use a DOM element or a component.
      */

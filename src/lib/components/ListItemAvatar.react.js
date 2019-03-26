@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ListItemAvatar1 from '@material-ui/core/ListItemAvatar';
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,29 +11,20 @@ import createStyled from './utils/Styled';
  */
 export default class ListItemAvatar extends Component {
     render() {
-        const { children, classes, id, style } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { children, className, id, style } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <ListItemAvatar1
-                            className={classes.root}
-                            id={id}
-                            style={style}
-                        >
-                            {children}
-                        </ListItemAvatar1>
-                    )
-                }
-            </Styled>
-        );
+            <ListItemAvatar1
+                className={className}
+                id={id}
+                style={style}
+            >
+                {children}
+            </ListItemAvatar1>
+        )
     }
 }
 
-ListItemAvatar.defaultProps = {
-    classes: {},
-};
+ListItemAvatar.defaultProps = {};
 
 ListItemAvatar.propTypes = {
     /**
@@ -44,7 +34,7 @@ ListItemAvatar.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The components id
      */

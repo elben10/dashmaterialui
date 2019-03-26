@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Badge1 from '@material-ui/core/Badge';
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,35 +11,27 @@ import createStyled from './utils/Styled';
  */
 export default class Badge extends Component {
     render() {
-        const { badgeContent, children, classes, color, component, id, invisible, max, showZero, style, variant } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { badgeContent, children, className, color, component, id, invisible, max, showZero, style, variant } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <Badge1
-                            badgeContent={badgeContent}
-                            color={color}
-                            className={classes.root}
-                            component={component}
-                            id={id}
-                            invisible={invisible}
-                            max={max}
-                            showZero={showZero}
-                            style={style}
-                            variant={variant}
-                        >
-                            {children}
-                        </Badge1>
-                    )
-                }
-            </Styled>
-        );
+            <Badge1
+                badgeContent={badgeContent}
+                color={color}
+                className={className}
+                component={component}
+                id={id}
+                invisible={invisible}
+                max={max}
+                showZero={showZero}
+                style={style}
+                variant={variant}
+            >
+                {children}
+            </Badge1>
+        )
     }
 }
 
 Badge.defaultProps = {
-    classes: {},
     color: 'default',
     component: 'span',
     max: 99,
@@ -60,7 +51,7 @@ Badge.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The color of the component. It supports those theme colors that make sense for this component.
      */

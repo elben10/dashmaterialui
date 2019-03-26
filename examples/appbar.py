@@ -18,7 +18,7 @@ app.layout = html.Div(
             dmui.Toolbar(
                 [
                     dmui.Typography(
-                        "News", variant="h6", color="inherit", classes={"flexGrow": 1}
+                        "News", variant="h6", color="inherit", style={"flexGrow": 1},
                     ),
                     dmui.Button("Login", color="inherit"),
                 ]

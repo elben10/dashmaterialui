@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CircularProgress1 from '@material-ui/core/CircularProgress';
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,32 +11,24 @@ import createStyled from './utils/Styled';
  */
 export default class CircularProgress extends Component {
     render() {
-        const { classes, color, disableShrink, id, size, style, thickness, value, variant } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { className, color, disableShrink, id, size, style, thickness, value, variant } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <CircularProgress1
-                            className={classes.root}
-                            color={color}
-                            disableShrink={disableShrink}
-                            id={id}
-                            size={size}
-                            style={style}
-                            thickness={thickness}
-                            value={value}
-                            variant={variant}
-                        />
-                    )
-                }
-            </Styled>
-        );
+            <CircularProgress1
+                className={className}
+                color={color}
+                disableShrink={disableShrink}
+                id={id}
+                size={size}
+                style={style}
+                thickness={thickness}
+                value={value}
+                variant={variant}
+            />
+        )
     }
 }
 
 CircularProgress.defaultProps = {
-    classes: {},
     color: 'primary',
     disableShrink: false,
     size: 40,
@@ -50,7 +41,7 @@ CircularProgress.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The color of the component. It supports those theme colors that make sense for this component.
      */

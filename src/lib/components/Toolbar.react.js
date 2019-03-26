@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Toolbar1 from '@material-ui/core/Toolbar'
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,30 +11,23 @@ import createStyled from './utils/Styled';
  */
 export default class Toolbar extends Component {
     render() {
-        const { children, classes, disableGutters, id, style, variant } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { children, className, disableGutters, id, style, variant } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <Toolbar1
-                            className={classes.root}
-                            disableGutters={disableGutters}
-                            id={id}
-                            style={style}
-                            variant={variant}
-                        >
-                            {children}
-                        </Toolbar1>
-                    )
-                }
-            </Styled>
-        );
+            <Toolbar1
+                className={className}
+                disableGutters={disableGutters}
+                id={id}
+                style={style}
+                variant={variant}
+            >
+                {children}
+            </Toolbar1>
+        )
+
     }
 }
 
 Toolbar.defaultProps = {
-    classes: {},
     disableGutters: false,
     variant: 'regular',
 };
@@ -48,7 +40,7 @@ Toolbar.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * If true, disables gutter padding.
      */

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ListItemText1 from '@material-ui/core/ListItemText';
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,34 +11,26 @@ import createStyled from './utils/Styled';
  */
 export default class ListItemText extends Component {
     render() {
-        const { children, classes, disableTypography, id, inset, primary, primaryTypographyProps, secondary, secondaryTypographyProps, style} = this.props;
-        const Styled = createStyled({ root: classes })
+        const { children, className, disableTypography, id, inset, primary, primaryTypographyProps, secondary, secondaryTypographyProps, style } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <ListItemText1
-                            className={classes.root}
-                            disableTypography={disableTypography}
-                            id={id}
-                            inset={inset}
-                            primary={primary}
-                            primaryTypographyProps={primaryTypographyProps}
-                            secondary={secondary}
-                            secondaryTypographyProps={secondaryTypographyProps}
-                            style={style}
-                        >
-                            {children}
-                        </ListItemText1>
-                    )
-                }
-            </Styled>
-        );
+            <ListItemText1
+                className={className}
+                disableTypography={disableTypography}
+                id={id}
+                inset={inset}
+                primary={primary}
+                primaryTypographyProps={primaryTypographyProps}
+                secondary={secondary}
+                secondaryTypographyProps={secondaryTypographyProps}
+                style={style}
+            >
+                {children}
+            </ListItemText1>
+        )
     }
 }
 
 ListItemText.defaultProps = {
-    classes: {},
     disableTypography: false,
     inset: false,
 };
@@ -52,7 +43,7 @@ ListItemText.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * If true, the children won't be wrapped by a Typography component. This can be useful to render an alternative Typography variant by wrapping the children (or primary) text, and optional secondary text with the Typography component.
      */

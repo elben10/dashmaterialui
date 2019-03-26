@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import AppBar1 from '@material-ui/core/AppBar';
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,30 +11,22 @@ import createStyled from './utils/Styled';
  */
 export default class AppBar extends Component {
     render() {
-        const { children, classes, color, id, position, style } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { children, className, color, id, position, style } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <AppBar1
-                            className={classes.root}
-                            color={color}
-                            id={id}
-                            position={position}
-                            style={style}
-                        >
-                            {children}
-                        </AppBar1>
-                    )
-                }
-            </Styled>
-        );
+            <AppBar1
+                className={className}
+                color={color}
+                id={id}
+                position={position}
+                style={style}
+            >
+                {children}
+            </AppBar1>
+        )
     }
 }
 
 AppBar.defaultProps = {
-    classes: {},
     color: 'primary',
     position: 'fixed',
 };
@@ -48,7 +39,7 @@ AppBar.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The color of the component. It supports those theme colors that make sense for this component.
      */

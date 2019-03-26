@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import TableBody1 from '@material-ui/core/TableBody'
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,30 +11,22 @@ import createStyled from './utils/Styled';
  */
 export default class TableBody extends Component {
     render() {
-        const { children, classes, component, id, padding, style } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { children, className, component, id, padding, style } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <TableBody1
-                            className={classes.root}
-                            component={component}
-                            id={id}
-                            padding={padding}
-                            style={style}
-                        >
-                            {children}
-                        </TableBody1>
-                    )
-                }
-            </Styled>
-        );
+            <TableBody1
+                className={className}
+                component={component}
+                id={id}
+                padding={padding}
+                style={style}
+            >
+                {children}
+            </TableBody1>
+        )
     }
 }
 
 TableBody.defaultProps = {
-    classes: {},
     component: 'tbody',
     padding: 'default',
 };
@@ -48,7 +39,7 @@ TableBody.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The component used for the root node. Either a string to use a DOM element or a component.
      */

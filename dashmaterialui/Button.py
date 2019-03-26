@@ -13,7 +13,7 @@ which is editable by the user.
 
 Keyword arguments:
 - children (a list of or a singular dash component, string or number; optional): The content of the button.
-- classes (dict; optional): Override or extend the styles applied to the component. See CSS API below for more details.
+- className (string; optional): Override or extend the styles applied to the component. See CSS API below for more details.
 - color (a value equal to: 'default', 'inherit', 'primary', 'secondary'; optional): The color of the component. It supports those theme colors that make sense for this component.
 - component (optional): The component used for the root node. Either a string to use a DOM element or a component.
 - disabled (boolean; optional): If true, the button will be disabled.
@@ -27,12 +27,12 @@ Keyword arguments:
 - style (dict; optional): Add style object
 - variant (a value equal to: 'text', 'outlined', 'contained', 'fab', 'extendedFab', 'flat', 'raised'; optional): The variant to use. WARNING: flat and raised are deprecated. Instead use text and contained respectively. fab and extendedFab are deprecated. Instead use <Fab> and <Fab variant="extended">"""
     @_explicitize_args
-    def __init__(self, children=None, classes=Component.UNDEFINED, color=Component.UNDEFINED, component=Component.UNDEFINED, disabled=Component.UNDEFINED, disableFocusRipple=Component.UNDEFINED, disableRipple=Component.UNDEFINED, fullWidth=Component.UNDEFINED, href=Component.UNDEFINED, id=Component.UNDEFINED, mini=Component.UNDEFINED, size=Component.UNDEFINED, style=Component.UNDEFINED, variant=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'classes', 'color', 'component', 'disabled', 'disableFocusRipple', 'disableRipple', 'fullWidth', 'href', 'id', 'mini', 'size', 'style', 'variant']
+    def __init__(self, children=None, className=Component.UNDEFINED, color=Component.UNDEFINED, component=Component.UNDEFINED, disabled=Component.UNDEFINED, disableFocusRipple=Component.UNDEFINED, disableRipple=Component.UNDEFINED, fullWidth=Component.UNDEFINED, href=Component.UNDEFINED, id=Component.UNDEFINED, mini=Component.UNDEFINED, size=Component.UNDEFINED, style=Component.UNDEFINED, variant=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'className', 'color', 'component', 'disabled', 'disableFocusRipple', 'disableRipple', 'fullWidth', 'href', 'id', 'mini', 'size', 'style', 'variant']
         self._type = 'Button'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'classes', 'color', 'component', 'disabled', 'disableFocusRipple', 'disableRipple', 'fullWidth', 'href', 'id', 'mini', 'size', 'style', 'variant']
+        self.available_properties = ['children', 'className', 'color', 'component', 'disabled', 'disableFocusRipple', 'disableRipple', 'fullWidth', 'href', 'id', 'mini', 'size', 'style', 'variant']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

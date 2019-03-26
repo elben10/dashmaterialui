@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import List1 from '@material-ui/core/List';
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,34 +11,26 @@ import createStyled from './utils/Styled';
  */
 export default class List extends Component {
     render() {
-        const { children, classes, component, dense, disablePadding, id, style, subheader } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { children, className, component, dense, disablePadding, id, style, subheader } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <List1
-                            className={classes.root}
-                            component={component}
-                            dense={dense}
-                            disablePadding={disablePadding}
-                            id={id}
-                            style={style}
-                            subheader={subheader}
-                        >
-                            {children}
-                        </List1>
-                    )
-                }
-            </Styled>
-        );
+            <List1
+                className={className}
+                component={component}
+                dense={dense}
+                disablePadding={disablePadding}
+                id={id}
+                style={style}
+                subheader={subheader}
+            >
+                {children}
+            </List1>
+        )
     }
 }
 
 List.defaultProps = {
-    classes: {},
     component: 'ul',
-    dense: false, 
+    dense: false,
     disablePadding: false,
 };
 
@@ -51,7 +42,7 @@ List.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The component used for the root node. Either a string to use a DOM element or a component.
      */

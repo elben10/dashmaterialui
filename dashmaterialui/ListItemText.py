@@ -13,7 +13,7 @@ which is editable by the user.
 
 Keyword arguments:
 - children (a list of or a singular dash component, string or number; optional): Alias for the primary property.
-- classes (dict; optional): Override or extend the styles applied to the component. See CSS API below for more details.
+- className (string; optional): Override or extend the styles applied to the component. See CSS API below for more details.
 - disableTypography (boolean; optional): If true, the children won't be wrapped by a Typography component. This can be useful to render an alternative Typography variant by wrapping the children (or primary) text, and optional secondary text with the Typography component.
 - id (string; optional): The components id
 - inset (boolean; optional): If true, the children will be indented. This should be used if there is no left avatar or left icon.
@@ -23,12 +23,12 @@ Keyword arguments:
 - secondaryTypographyProps (dict; optional): These props will be forwarded to the secondary typography component (as long as disableTypography is not true).
 - style (dict; optional): Add style object"""
     @_explicitize_args
-    def __init__(self, children=None, classes=Component.UNDEFINED, disableTypography=Component.UNDEFINED, id=Component.UNDEFINED, inset=Component.UNDEFINED, primary=Component.UNDEFINED, primaryTypographyProps=Component.UNDEFINED, secondary=Component.UNDEFINED, secondaryTypographyProps=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'classes', 'disableTypography', 'id', 'inset', 'primary', 'primaryTypographyProps', 'secondary', 'secondaryTypographyProps', 'style']
+    def __init__(self, children=None, className=Component.UNDEFINED, disableTypography=Component.UNDEFINED, id=Component.UNDEFINED, inset=Component.UNDEFINED, primary=Component.UNDEFINED, primaryTypographyProps=Component.UNDEFINED, secondary=Component.UNDEFINED, secondaryTypographyProps=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'className', 'disableTypography', 'id', 'inset', 'primary', 'primaryTypographyProps', 'secondary', 'secondaryTypographyProps', 'style']
         self._type = 'ListItemText'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'classes', 'disableTypography', 'id', 'inset', 'primary', 'primaryTypographyProps', 'secondary', 'secondaryTypographyProps', 'style']
+        self.available_properties = ['children', 'className', 'disableTypography', 'id', 'inset', 'primary', 'primaryTypographyProps', 'secondary', 'secondaryTypographyProps', 'style']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

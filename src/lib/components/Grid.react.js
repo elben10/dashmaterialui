@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Grid1 from '@material-ui/core/Grid'
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,45 +11,37 @@ import createStyled from './utils/Styled';
  */
 export default class Grid extends Component {
     render() {
-        const { alignContent, alignItems, children, classes, component, container, direction, id, item, justify, lg, md, sm, spacing, style, wrap, xl, xs, zeroMinWidth } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { alignContent, alignItems, children, className, component, container, direction, id, item, justify, lg, md, sm, spacing, style, wrap, xl, xs, zeroMinWidth } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <Grid1
-                            alignContent={alignContent}
-                            alignItems={alignItems}
-                            className={classes.root}
-                            component={component}
-                            container={container}
-                            direction={direction}
-                            id={id}
-                            item={item}
-                            justify={justify}
-                            lg={lg}
-                            md={md}
-                            sm={sm}
-                            spacing={spacing}
-                            style={style}
-                            wrap={wrap}
-                            xl={xl}
-                            xs={xs}
-                            zeroMinWidth={zeroMinWidth}
-                        >
-                            {children}
-                        </Grid1>
-                    )
-                }
-            </Styled>
-        );
+            <Grid1
+                alignContent={alignContent}
+                alignItems={alignItems}
+                className={className}
+                component={component}
+                container={container}
+                direction={direction}
+                id={id}
+                item={item}
+                justify={justify}
+                lg={lg}
+                md={md}
+                sm={sm}
+                spacing={spacing}
+                style={style}
+                wrap={wrap}
+                xl={xl}
+                xs={xs}
+                zeroMinWidth={zeroMinWidth}
+            >
+                {children}
+            </Grid1>
+        )
     }
 }
 
 Grid.defaultProps = {
     alignContent: 'stretch',
     alignItems: 'stretch',
-    classes: {},
     component: 'div',
     container: false,
     direction: 'row',
@@ -82,7 +73,7 @@ Grid.propTypes = {
     /**
      *  Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The component used for the root node. Either a string to use a DOM element or a component.
      */

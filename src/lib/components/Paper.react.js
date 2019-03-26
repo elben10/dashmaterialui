@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Paper1 from '@material-ui/core/Paper'
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,31 +11,23 @@ import createStyled from './utils/Styled';
  */
 export default class Paper extends Component {
     render() {
-        const { children, classes, component, elevation, id, square, style } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { children, className, component, elevation, id, square, style } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <Paper1
-                            className={classes.root}
-                            component={component}
-                            elevation={elevation}
-                            id={id}
-                            square={square}
-                            style={style}
-                        >
-                            {children}
-                        </Paper1>
-                    )
-                }
-            </Styled>
-        );
+            <Paper1
+                className={className}
+                component={component}
+                elevation={elevation}
+                id={id}
+                square={square}
+                style={style}
+            >
+                {children}
+            </Paper1>
+        )
     }
 }
 
 Paper.defaultProps = {
-    classes: {},
     component: 'div',
     elevation: 2,
     square: false
@@ -50,7 +41,7 @@ Paper.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The component used for the root node. Either a string to use a DOM element or a component.
      */

@@ -11,16 +11,12 @@
         "required": false,
         "description": "The content of the component."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "color": {
         "type": {
@@ -119,16 +115,12 @@
         "required": false,
         "description": "Used to render icon or text elements inside the Avatar. src and alt props will not be used and no img will be rendered by default.\nThis can be an element, or just a string."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "component": {
         "type": {
@@ -205,16 +197,12 @@
         "required": false,
         "description": "The badge will be added relative to this node."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "color": {
         "type": {
@@ -335,16 +323,12 @@
         "required": false,
         "description": "The content of the button."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "color": {
         "type": {
@@ -539,16 +523,12 @@
         "required": false,
         "description": "The content of the component."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "id": {
         "type": {
@@ -589,16 +569,12 @@
         "required": false,
         "description": "The content of the component."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "id": {
         "type": {
@@ -628,16 +604,12 @@
         "required": false,
         "description": "The content of the component."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "disableActionSpacing": {
         "type": {
@@ -678,16 +650,12 @@
         "required": false,
         "description": "The content of the component."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "component": {
         "type": {
@@ -722,16 +690,12 @@
     "displayName": "CardMedia",
     "methods": [],
     "props": {
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "component": {
         "type": {
@@ -780,16 +744,12 @@
     "displayName": "CircularProgress",
     "methods": [],
     "props": {
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "color": {
         "type": {
@@ -913,16 +873,12 @@
           "computed": false
         }
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "component": {
         "type": {
@@ -1077,16 +1033,12 @@
         "required": false,
         "description": "The content of the component."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "component": {
         "type": {
@@ -1675,16 +1627,12 @@
         "required": false,
         "description": "The content of the component."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "cols": {
         "type": {
@@ -1748,16 +1696,12 @@
         "required": false,
         "description": "The name of the icon font ligature."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "color": {
         "type": {
@@ -1865,16 +1809,12 @@
         "required": false,
         "description": "The icon element."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "color": {
         "type": {
@@ -1962,16 +1902,12 @@
         "required": false,
         "description": "The content of the link."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "color": {
         "type": {
@@ -2100,16 +2036,12 @@
         "required": false,
         "description": "The content of the component."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "component": {
         "type": {
@@ -2212,16 +2144,12 @@
         "required": false,
         "description": "The content of the component. If a ListItemSecondaryAction is used it must be the last child."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "component": {
         "type": {
@@ -2333,16 +2261,12 @@
         "required": false,
         "description": "The content of the component \u2013 normally Avatar."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "id": {
         "type": {
@@ -2372,16 +2296,12 @@
         "required": false,
         "description": "Alias for the primary property."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "disableTypography": {
         "type": {
@@ -2461,16 +2381,12 @@
         "required": false,
         "description": "The content of the component."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "component": {
         "type": {
@@ -2534,16 +2450,12 @@
         "required": false,
         "description": "The content of the table, normally TableHead and TableBody."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "component": {
         "type": {
@@ -2614,16 +2526,12 @@
         "required": false,
         "description": "The content of the table, normally TableHead and TableBody."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "component": {
         "type": {
@@ -2727,16 +2635,12 @@
         "required": false,
         "description": "The table cell contents."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "component": {
         "type": {
@@ -2848,16 +2752,12 @@
         "required": false,
         "description": "The content of the component, normally TableRow."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "component": {
         "type": {
@@ -2899,16 +2799,12 @@
         "required": false,
         "description": "The content of the component, normally TableRow."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "component": {
         "type": {
@@ -2957,16 +2853,12 @@
         "required": false,
         "description": "Should be valid <tr> children such as TableCell."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "component": {
         "type": {
@@ -3030,16 +2922,12 @@
         "required": false,
         "description": "Toolbar children, usually a mixture of IconButton, Button and Typography."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "disableGutters": {
         "type": {
@@ -3134,16 +3022,12 @@
         "required": false,
         "description": "The content of the component."
       },
-      "classes": {
+      "className": {
         "type": {
-          "name": "object"
+          "name": "string"
         },
         "required": false,
-        "description": "Override or extend the styles applied to the component. See CSS API below for more details.",
-        "defaultValue": {
-          "value": "{}",
-          "computed": false
-        }
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
       },
       "color": {
         "type": {

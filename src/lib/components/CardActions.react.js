@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CardActions1 from '@material-ui/core/CardActions';
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,29 +11,21 @@ import createStyled from './utils/Styled';
  */
 export default class CardActions extends Component {
     render() {
-        const { children, classes, disableActionSpacing, id, style } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { children, className, disableActionSpacing, id, style } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <CardActions1
-                            className={classes.root}
-                            disableActionSpacing={disableActionSpacing}
-                            id={id}
-                            style={style}
-                        >
-                            {children}
-                        </CardActions1>
-                    )
-                }
-            </Styled>
-        );
+            <CardActions1
+                className={className}
+                disableActionSpacing={disableActionSpacing}
+                id={id}
+                style={style}
+            >
+                {children}
+            </CardActions1>
+        )
     }
 }
 
 CardActions.defaultProps = {
-    classes: {},
     disableActionSpacing: false,
 };
 
@@ -46,7 +37,7 @@ CardActions.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * If true, the card actions do not have additional margin.
      */

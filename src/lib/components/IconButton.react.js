@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import IconButton1 from '@material-ui/core/IconButton';
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,31 +11,23 @@ import createStyled from './utils/Styled';
  */
 export default class IconButton extends Component {
     render() {
-        const { children, classes, color, disabled, disableRipple, id, style } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { children, className, color, disabled, disableRipple, id, style } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <IconButton1
-                            className={classes.root}
-                            color={color}
-                            disabled={disabled}
-                            disableRipple={disableRipple}
-                            id={id}
-                            style={style}
-                        >
-                            {children}
-                        </IconButton1>
-                    )
-                }
-            </Styled>
-        );
+            <IconButton1
+                className={className}
+                color={color}
+                disabled={disabled}
+                disableRipple={disableRipple}
+                id={id}
+                style={style}
+            >
+                {children}
+            </IconButton1>
+        )
     }
 }
 
 IconButton.defaultProps = {
-    classes: {},
     color: 'default',
     disabled: false,
 };
@@ -49,7 +40,7 @@ IconButton.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The color of the component. It supports those theme colors that make sense for this component.
      */

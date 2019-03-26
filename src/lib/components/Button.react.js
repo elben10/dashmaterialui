@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Button1 from '@material-ui/core/Button';
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,38 +11,32 @@ import createStyled from './utils/Styled';
  */
 export default class Button extends Component {
     render() {
-        const { children, classes, color, component, disabled, disableFocusRipple, disableRipple, fullWidth, href, id, mini, size, style, variant } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { children, className, color, component, disabled, disableFocusRipple, disableRipple, fullWidth, href, id, mini, size, style, variant } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <Button1
-                            className={classes.root}
-                            color={color}
-                            component={component}
-                            disabled={disabled}
-                            disableFocusRipple={disableFocusRipple}
-                            disableRipple={disableRipple}
-                            fullWidth={fullWidth}
-                            href={href}
-                            id={id}
-                            mini={mini}
-                            size={size}
-                            style={style}
-                            variant={variant}
-                        >
-                            {children}
-                        </Button1>
-                    )
-                }
-            </Styled>
-        );
+
+            <Button1
+                className={className}
+                color={color}
+                component={component}
+                disabled={disabled}
+                disableFocusRipple={disableFocusRipple}
+                disableRipple={disableRipple}
+                fullWidth={fullWidth}
+                href={href}
+                id={id}
+                mini={mini}
+                size={size}
+                style={style}
+                variant={variant}
+            >
+                {children}
+            </Button1>
+        )
+
     }
 }
 
 Button.defaultProps = {
-    classes: {},
     color: 'default',
     component: 'button',
     disabled: false,
@@ -62,7 +55,7 @@ Button.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The color of the component. It supports those theme colors that make sense for this component.
      */

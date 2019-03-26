@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ListItem1 from '@material-ui/core/ListItem';
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,40 +11,32 @@ import createStyled from './utils/Styled';
  */
 export default class ListItem extends Component {
     render() {
-        const { alignItems, button, children, classes, component, ContainerComponent, ContainerProps, dense, disabled, disableGutters, divider, id, selected, style } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { alignItems, button, children, className, component, ContainerComponent, ContainerProps, dense, disabled, disableGutters, divider, id, selected, style } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <ListItem1
-                            alignItems={alignItems}
-                            button={button}
-                            className={classes.root}
-                            component={component}
-                            ContainerComponent={ContainerComponent}
-                            ContainerProps={ContainerProps}
-                            dense={dense}
-                            disabled={disabled}
-                            disableGutters={disableGutters}
-                            divider={divider}
-                            id={id}
-                            selected={selected}
-                            style={style}
-                        >
-                            {children}
-                        </ListItem1>
-                    )
-                }
-            </Styled>
-        );
+            <ListItem1
+                alignItems={alignItems}
+                button={button}
+                className={className}
+                component={component}
+                ContainerComponent={ContainerComponent}
+                ContainerProps={ContainerProps}
+                dense={dense}
+                disabled={disabled}
+                disableGutters={disableGutters}
+                divider={divider}
+                id={id}
+                selected={selected}
+                style={style}
+            >
+                {children}
+            </ListItem1>
+        )
     }
 }
 
 ListItem.defaultProps = {
     alignItems: 'center',
     button: false,
-    classes: {},
     ContainerComponent: 'li',
     dense: false,
     disabled: false,
@@ -70,7 +61,7 @@ ListItem.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The component used for the root node. Either a string to use a DOM element or a component. By default, it's a li when button is false and a div when button is true.
      */

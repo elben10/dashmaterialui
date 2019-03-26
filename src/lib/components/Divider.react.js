@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Divider1 from '@material-ui/core/Divider';
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,32 +11,24 @@ import createStyled from './utils/Styled';
  */
 export default class Divider extends Component {
     render() {
-        const { absolute, classes, component, id, inset, light, style, variant } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { absolute, className, component, id, inset, light, style, variant } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <Divider1
-                            absolute={absolute}
-                            className={classes.root}
-                            component={component}
-                            id={id}
-                            inset={inset}
-                            light={light}
-                            style={style}
-                            variant={variant}
-                        />
-                    )
-                }
-            </Styled>
-        );
+            <Divider1
+                absolute={absolute}
+                className={className}
+                component={component}
+                id={id}
+                inset={inset}
+                light={light}
+                style={style}
+                variant={variant}
+            />
+        )
     }
 }
 
 Divider.defaultProps = {
     absolute: false,
-    classes: {},
     component: 'hr',
     light: false,
     variant: 'fullWidth',
@@ -51,7 +42,7 @@ Divider.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The component used for the root node. Either a string to use a DOM element or a component.
      */

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import TableRow1 from '@material-ui/core/TableRow'
-import createStyled from './utils/Styled';
 
 /**
  * ExampleComponent is an example component.
@@ -12,32 +11,24 @@ import createStyled from './utils/Styled';
  */
 export default class TableRow extends Component {
     render() {
-        const { children, classes, component, hover, id, selected, style } = this.props;
-        const Styled = createStyled({ root: classes })
+        const { children, className, component, hover, id, selected, style } = this.props;
         return (
-            <Styled>
-                {
-                    ({ classes }) => (
-                        <TableRow1
-                            className={classes.root}
-                            component={component}
-                            hover={hover}
-                            id={id}
-                            selected={selected}
-                            style={style}
-                        >
-                            {children}
-                        </TableRow1>
-                    )
-                }
-            </Styled>
-        );
+            <TableRow1
+                className={className}
+                component={component}
+                hover={hover}
+                id={id}
+                selected={selected}
+                style={style}
+            >
+                {children}
+            </TableRow1>
+        )
 
     }
 }
 
 TableRow.defaultProps = {
-    classes: {},
     component: 'tr',
     hover: false,
     selected: false,
@@ -51,7 +42,7 @@ TableRow.propTypes = {
     /**
      * Override or extend the styles applied to the component. See CSS API below for more details.
      */
-    classes: PropTypes.object,
+    className: PropTypes.string,
     /**
      * The component used for the root node. Either a string to use a DOM element or a component.
      */
