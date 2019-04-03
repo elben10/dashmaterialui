@@ -18,6 +18,7 @@ from .Link import Link
 from .List import List
 from .ListItem import ListItem
 from .ListItemAvatar import ListItemAvatar
+from .ListItemIcon import ListItemIcon
 from .ListItemText import ListItemText
 from .Paper import Paper
 from .Table import Table
@@ -50,6 +51,7 @@ __all__ = [
     "List",
     "ListItem",
     "ListItemAvatar",
+    "ListItemIcon",
     "ListItemText",
     "Paper",
     "Table",
