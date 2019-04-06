@@ -1953,8 +1953,32 @@
       "only": {
         "type": {
           "name": "enum",
-          "computed": true,
-          "value": "'xs'"
+          "value": [
+            {
+              "value": "'xs'",
+              "computed": false
+            },
+            {
+              "value": "'sm'",
+              "computed": false
+            },
+            {
+              "value": "'md'",
+              "computed": false
+            },
+            {
+              "value": "'lg'",
+              "computed": false
+            },
+            {
+              "value": "'xl'",
+              "computed": false
+            },
+            {
+              "value": "PropTypes.arrayOf(PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']))",
+              "computed": true
+            }
+          ]
         },
         "required": false,
         "description": "Hide the given breakpoint(s)."

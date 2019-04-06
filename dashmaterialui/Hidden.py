@@ -23,7 +23,7 @@ For instance, you could be using the user-agent or the client-hints. https://can
 - lgUp (boolean; optional): If true, screens this size and down will be hidden.
 - mdDown (boolean; optional): If true, screens this size and down will be hidden.
 - mdUp (boolean; optional): If true, screens this size and down will be hidden.
-- only (optional): Hide the given breakpoint(s).
+- only (a value equal to: 'xs', 'sm', 'md', 'lg', 'xl', PropTypes.arrayOf(PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl'])); optional): Hide the given breakpoint(s).
 - smDown (boolean; optional): If true, screens this size and down will be hidden.
 - smUp (boolean; optional): If true, screens this size and down will be hidden.
 - style (dict; optional): Add style object

@@ -93,7 +93,7 @@ Hidden.propTypes = {
     /**
      * Hide the given breakpoint(s).
      */
-    only: PropTypes.oneOf('xs', 'sm', 'md', 'lg', 'xl', PropTypes.arrayOf(PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']))),
+    only: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl', PropTypes.arrayOf(PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']))]),
     /**
      * If true, screens this size and down will be hidden.
      */
