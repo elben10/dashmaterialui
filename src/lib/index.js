@@ -13,6 +13,7 @@ import Divider from './components/Divider.react';
 import Drawer from './components/Drawer.react';
 import Grid from './components/Grid.react';
 import GridList from './components/GridList.react';
+import Hidden from './components/Hidden.react';
 import Icon from './components/Icon.react';
 import IconButton from './components/IconButton.react';
 import Link from './components/Link.react';
@@ -47,6 +48,7 @@ export {
     Drawer,
     Grid,
     GridList,
+    Hidden,
     Icon,
     IconButton,
     Link,

@@ -12,6 +12,7 @@ from .Divider import Divider
 from .Drawer import Drawer
 from .Grid import Grid
 from .GridList import GridList
+from .Hidden import Hidden
 from .Icon import Icon
 from .IconButton import IconButton
 from .Link import Link
@@ -45,6 +46,7 @@ __all__ = [
     "Drawer",
     "Grid",
     "GridList",
+    "Hidden",
     "Icon",
     "IconButton",
     "Link",

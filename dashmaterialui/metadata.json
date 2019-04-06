@@ -1830,6 +1830,210 @@
       }
     }
   },
+  "src/lib/components/Hidden.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "Hidden",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The content of the component."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Override or extend the styles applied to the component. See CSS API below for more details."
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The components id"
+      },
+      "implementation": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'css'",
+              "computed": false
+            },
+            {
+              "value": "'js'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Specify which implementation to use. 'js' is the default, 'css' works better for server-side rendering.",
+        "defaultValue": {
+          "value": "'js'",
+          "computed": false
+        }
+      },
+      "initialWidth": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'xs'",
+              "computed": false
+            },
+            {
+              "value": "'sm'",
+              "computed": false
+            },
+            {
+              "value": "'md'",
+              "computed": false
+            },
+            {
+              "value": "'lg'",
+              "computed": false
+            },
+            {
+              "value": "'xl'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "You can use this property when choosing the js implementation with server-side rendering.\nAs window.innerWidth is unavailable on the server, we default to rendering an empty component during the first mount. You might want to use an heuristic to approximate the screen width of the client browser screen width.\nFor instance, you could be using the user-agent or the client-hints. https://caniuse.com/#search=client%20hint"
+      },
+      "lgDown": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, screens this size and down will be hidden.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "lgUp": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, screens this size and down will be hidden.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "mdDown": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, screens this size and down will be hidden.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "mdUp": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, screens this size and down will be hidden.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "only": {
+        "type": {
+          "name": "enum",
+          "computed": true,
+          "value": "'xs'"
+        },
+        "required": false,
+        "description": "Hide the given breakpoint(s)."
+      },
+      "smDown": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, screens this size and down will be hidden.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "smUp": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, screens this size and down will be hidden.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Add style object"
+      },
+      "xlDown": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, screens this size and down will be hidden.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "xlUp": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, screens this size and down will be hidden.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "xsDown": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, screens this size and down will be hidden.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "xsUp": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, screens this size and down will be hidden.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/Icon.react.js": {
     "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
     "displayName": "Icon",
