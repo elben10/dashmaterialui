@@ -23,16 +23,17 @@ Keyword arguments:
 - disabled (boolean; optional): If true, the list item will be disabled.
 - disableGutters (boolean; optional): If true, the left and right padding is removed.
 - divider (boolean; optional): If true, a 1px light border is added to the bottom of the list item.
+- href (optional): The url
 - id (string; optional): The components id
 - selected (boolean; optional): Use to apply selected styling.
 - style (dict; optional): Add style object"""
     @_explicitize_args
-    def __init__(self, children=None, alignItems=Component.UNDEFINED, button=Component.UNDEFINED, className=Component.UNDEFINED, component=Component.UNDEFINED, ContainerComponent=Component.UNDEFINED, ContainerProps=Component.UNDEFINED, dense=Component.UNDEFINED, disabled=Component.UNDEFINED, disableGutters=Component.UNDEFINED, divider=Component.UNDEFINED, id=Component.UNDEFINED, selected=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'alignItems', 'button', 'className', 'component', 'ContainerComponent', 'ContainerProps', 'dense', 'disabled', 'disableGutters', 'divider', 'id', 'selected', 'style']
+    def __init__(self, children=None, alignItems=Component.UNDEFINED, button=Component.UNDEFINED, className=Component.UNDEFINED, component=Component.UNDEFINED, ContainerComponent=Component.UNDEFINED, ContainerProps=Component.UNDEFINED, dense=Component.UNDEFINED, disabled=Component.UNDEFINED, disableGutters=Component.UNDEFINED, divider=Component.UNDEFINED, href=Component.UNDEFINED, id=Component.UNDEFINED, selected=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'alignItems', 'button', 'className', 'component', 'ContainerComponent', 'ContainerProps', 'dense', 'disabled', 'disableGutters', 'divider', 'href', 'id', 'selected', 'style']
         self._type = 'ListItem'
         self._namespace = 'dashmaterialui'
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'alignItems', 'button', 'className', 'component', 'ContainerComponent', 'ContainerProps', 'dense', 'disabled', 'disableGutters', 'divider', 'id', 'selected', 'style']
+        self.available_properties = ['children', 'alignItems', 'button', 'className', 'component', 'ContainerComponent', 'ContainerProps', 'dense', 'disabled', 'disableGutters', 'divider', 'href', 'id', 'selected', 'style']
         self.available_wildcard_properties =            []
 
         _explicit_args = kwargs.pop('_explicit_args')

@@ -2596,6 +2596,14 @@
           "computed": false
         }
       },
+      "href": {
+        "type": {
+          "name": "custom",
+          "raw": "Proptypes.string"
+        },
+        "required": false,
+        "description": "The url"
+      },
       "id": {
         "type": {
           "name": "string"
