@@ -11,7 +11,7 @@ import ListItem1 from '@material-ui/core/ListItem';
  */
 export default class ListItem extends Component {
     render() {
-        const { alignItems, button, children, className, component, ContainerComponent, ContainerProps, dense, disabled, disableGutters, divider, id, selected, style } = this.props;
+        const { alignItems, button, children, className, component, ContainerComponent, ContainerProps, dense, disabled, disableGutters, divider, href, id, selected, style } = this.props;
         return (
             <ListItem1
                 alignItems={alignItems}
@@ -24,6 +24,7 @@ export default class ListItem extends Component {
                 disabled={disabled}
                 disableGutters={disableGutters}
                 divider={divider}
+                href={href}
                 id={id}
                 selected={selected}
                 style={style}
@@ -90,6 +91,10 @@ ListItem.propTypes = {
      * If true, a 1px light border is added to the bottom of the list item.
      */
     divider: PropTypes.bool,
+    /**
+     The url
+     */
+    href: Proptypes.string,
     /**
      * The components id
      */
