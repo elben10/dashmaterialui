@@ -94,7 +94,7 @@ ListItem.propTypes = {
     /**
      The url
      */
-    href: Proptypes.string,
+    href: PropTypes.string,
     /**
      * The components id
      */
