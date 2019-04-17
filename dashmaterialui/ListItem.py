@@ -23,7 +23,7 @@ Keyword arguments:
 - disabled (boolean; optional): If true, the list item will be disabled.
 - disableGutters (boolean; optional): If true, the left and right padding is removed.
 - divider (boolean; optional): If true, a 1px light border is added to the bottom of the list item.
-- href (optional): The url
+- href (string; optional): The url
 - id (string; optional): The components id
 - selected (boolean; optional): Use to apply selected styling.
 - style (dict; optional): Add style object"""

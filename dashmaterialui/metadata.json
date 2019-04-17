@@ -2598,8 +2598,7 @@
       },
       "href": {
         "type": {
-          "name": "custom",
-          "raw": "Proptypes.string"
+          "name": "string"
         },
         "required": false,
         "description": "The url"
